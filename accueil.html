@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Inclusion du header -->
+    <div id="header-container"></div>
+
+    <main class="container">
+        <!-- Zone principale (85%) -->
+        <div class="main-content">
+            <div class="video-container">
+                <!-- Zone pour une vidéo -->
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+            </div>
+            <div class="button-container">
+                <!-- 4 gros boutons sous forme d'images -->
+                <img src="bouton1.png" alt="Bouton 1">
+                <img src="bouton2.png" alt="Bouton 2">
+                <img src="bouton3.png" alt="Bouton 3">
+                <img src="bouton4.png" alt="Bouton 4">
+            </div>
+        </div>
+
+        <!-- Zone d'informations (15%) -->
+        <aside class="info-section">
+            <h2>Informations</h2>
+            <p>AgriPulse va nous rapport un max de thunes parce qu'on va gagner le PCE</p>
+        </aside>
+    </main>
+
+    <script>
+        // Charger le header dynamiquement
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+    </script>
+</body>
+</html>

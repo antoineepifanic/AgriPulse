@@ -1,0 +1,83 @@
+/* Réinitialisation des marges et police par défaut */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ----- HEADER ----- */
+.header {
+    background-color: rgb(5, 103, 5);
+    display: flex;
+    justify-content: space-between; /* Sépare le logo et les boutons */
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 40px; /* Taille du logo */
+}
+
+.buttons {
+    display: flex; /* Permet d'aligner les boutons horizontalement */
+    gap: 15px; /* Espace entre les boutons */
+}
+
+.buttons img {
+    height: 30px; /* Taille des icônes */
+    cursor: pointer;
+}
+
+/* ----- LAYOUT PRINCIPAL ----- */
+.container {
+    display: flex;
+    height: calc(100vh - 60px); /* Ajuste la hauteur en soustrayant celle du header */
+}
+
+/* Zone principale (85%) */
+.main-content {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Zone pour la vidéo */
+.video-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 800px; /* Ajuste la taille max de la vidéo */
+}
+
+/* Conteneur des boutons */
+.button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row; /* Change l'alignement en ligne */
+    justify-content: space-between; /* Espacement entre les boutons */
+    gap: 10px;
+}
+
+.button-container img {
+    width: 25%; /* Chaque bouton prend 25% des 85% */
+    cursor: pointer;
+}
+.button-container img {
+    width: 100%; /* Prend toute la largeur disponible */
+    cursor: pointer;
+}
+
+/* Zone d'informations (15%) */
+.info-section {
+    width: 15%;
+    background-color: #f3f3f3;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}

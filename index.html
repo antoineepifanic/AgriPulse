@@ -1,46 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accueil</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Inclusion du header -->
-    <div id="header-container"></div>
+<!-- Inclusion du header -->
+<div id="header-container"></div>
+<main class="container">
+<!-- Zone principale (85%) -->
+<div class="main-content">
+<div class="video-container">
+<!-- Zone pour une vidéo -->
+<video controls>
+<source src="video.mp4" type="video/mp4">
+ Votre navigateur ne supporte pas la lecture de vidéos.
+</video>
+</div>
+<!-- Remplace ta div button-container par ce code -->
+<div class="button-container">
+<!-- Bouton Agriculture (Blé) -->
+<div class="custom-button">
+<svg viewBox="0 0 24 24" class="button-icon">
+<path d="M12,2 L12,22 M12,7 L9,4 M12,10 L15,7 M12,13 L9,10 M12,16 L15,13" stroke="#056705" stroke-width="2" fill="none" stroke-linecap="round"/>
+<circle cx="9" cy="4" r="1.5" fill="#056705"/>
+<circle cx="15" cy="7" r="1.5" fill="#056705"/>
+<circle cx="9" cy="10" r="1.5" fill="#056705"/>
+<circle cx="15" cy="13" r="1.5" fill="#056705"/>
+</svg>
+<span>Agriculture</span>
+</div>
+<!-- Bouton Élevage (Vache) -->
+<div class="custom-button">
+<svg viewBox="0 0 24 24" class="button-icon">
+<path d="M4,12 Q4,8 8,8 L16,8 Q20,8 20,12 L20,16 Q20,18 18,18 L6,18 Q4,18 4,16 Z" fill="none" stroke="#056705" stroke-width="1.5"/>
+<circle cx="8" cy="7" r="2" fill="#056705"/>
+<circle cx="16" cy="7" r="2" fill="#056705"/>
+<circle cx="9" cy="13" r="1" fill="#056705"/>
+<circle cx="15" cy="13" r="1" fill="#056705"/>
+<path d="M10,16 Q12,17 14,16" fill="none" stroke="#056705" stroke-width="1" stroke-linecap="round"/>
+</svg>
+<span>Élevage</span>
+</div>
+<!-- Bouton Marché (Étal) -->
+<div class="custom-button">
+<svg viewBox="0 0 24 24" class="button-icon">
+<path d="M3,6 L21,6 L19,10 L5,10 Z" fill="none" stroke="#056705" stroke-width="1.5"/>
+<path d="M5,10 L5,18 L19,18 L19,10" fill="none" stroke="#056705" stroke-width="1.5"/>
+<path d="M5,10 L5,18 L11,18 L11,10" fill="none" stroke="#056705" stroke-width="1.5"/>
+<path d="M19,10 L19,18 L13,18 L13,10" fill="none" stroke="#056705" stroke-width="1.5"/>
+<circle cx="7" cy="8" r="1" fill="#056705"/>
+<circle cx="12" cy="8" r="1" fill="#056705"/>
+<circle cx="17" cy="8" r="1" fill="#056705"/>
+</svg>
+<span>Marché</span>
+</div>
+<!-- Bouton Analyse (Ordinateur) -->
+<div class="custom-button">
+<svg viewBox="0 0 24 24" class="button-icon">
+<path d="M5,6 L19,6 L19,16 L5,16 Z" fill="none" stroke="#056705" stroke-width="1.5"/>
+<path d="M3,16 L21,16 L21,18 L3,18 Z" fill="none" stroke="#056705" stroke-width="1.5"/>
+<path d="M10,18 L14,18 L14,20 L10,20 Z" fill="none" stroke="#056705" stroke-width="1.5"/>
+<path d="M9,12 L15,12" stroke="#056705" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M9,9 L15,9" stroke="#056705" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+<span>Analyse</span>
+</div>
+</div>
+</div>
+<!-- Zone d'informations (15%) -->
+<aside class="info-section">
+<h2>Infos</h2>
+<p>AgriPulse va nous rapporter un max de thunes parce qu'on va gagner le PCE</p>
+</aside>
+</main>
 
-    <main class="container">
-        <!-- Zone principale (85%) -->
-        <div class="main-content">
-            <div class="video-container">
-                <!-- Zone pour une vidéo -->
-                <video controls>
-                    <source src="video.mp4" type="video/mp4">
-                    Votre navigateur ne supporte pas la lecture de vidéos.
-                </video>
-            </div>
-            <div class="button-container">
-                <!-- 4 gros boutons sous la forme d'images -->
-                <img src="bouton1.png" alt="Bouton 1">
-                <img src="bouton2.png" alt="Bouton 2">
-                <img src="bouton3.png" alt="Bouton 3">
-                <img src="bouton4.png" alt="Bouton 4">
-            </div>
-        </div>
+<!-- Inclusion du footer -->
+<div id="footer-container"></div>
 
-        <!-- Zone d'informations (15%) -->
-        <aside class="info-section">
-            <h2>Infos</h2>
-            <p>AgriPulse va nous rapporter un max de thunes parce qu'on va gagner le PCE</p>
-        </aside>
-    </main>
+<script>
+// Charger le header dynamiquement
+fetch('header.html')
+ .then(response => response.text())
+ .then(data => document.getElementById('header-container').innerHTML = data);
 
-    <script>
-        // Charger le header dynamiquement
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header-container').innerHTML = data);
-    </script>
+// Charger le footer dynamiquement
+fetch('footer.html')
+ .then(response => response.text())
+ .then(data => document.getElementById('footer-container').innerHTML = data);
+</script>
 </body>
 </html>

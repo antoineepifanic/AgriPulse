@@ -32,7 +32,7 @@ body, html {
 .container {
     display: flex;
     height: calc(100vh - 60px); /* Ajuste la hauteur en soustrayant celle du header */
-    margin-top: 60px; /* Ajoute cette ligne pour le header fixe */
+    margin-top: 80px; /* Ajoute cette ligne pour le header fixe */
 }
 
 /* Zone principale (85%) */
@@ -50,6 +50,7 @@ body, html {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .video-container video {

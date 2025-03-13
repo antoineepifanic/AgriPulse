@@ -32,6 +32,7 @@ body, html {
 .container {
     display: flex;
     height: calc(100vh - 60px); /* Ajuste la hauteur en soustrayant celle du header */
+    margin-top: 60px; /* Ajoute cette ligne pour le header fixe */
 }
 
 /* Zone principale (85%) */
@@ -149,12 +150,12 @@ body, html {
 
 /* Footer et éléments associés */
 footer {
-    background-color: #d7c5ad;
+    background-color: #056705;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 .footer-main {
-    background-color: #d7c5ad;
+    background-color: #056705;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     padding: 40px 60px 20px 60px;
 }
@@ -184,7 +185,7 @@ footer {
 }
  
 .texte_footer {
-    background-color: #d7c5ad;
+    background-color: #056705;
     padding: 20px;
     text-align: center;
     font-size: 12px;
@@ -251,3 +252,207 @@ footer {
 .APROPOS, .INFOSPRATIQUES {
     padding-top: 0; /* Remis à 0 */
 }
+
+/* Styles supplémentaires pour le nouveau header */
+header {
+    background-color: #056705;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: large;
+}
+
+header .barre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #056705;
+}
+
+/* Styles du logo */
+.gauche {
+    flex: 0 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.gauche a {
+    display: flex;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gauche img {
+    height: 40px;
+    width: 160px;
+    padding: 2px 5px;
+    margin: 0;
+    display: block;
+    object-fit: contain;
+}
+
+/* Styles des icônes de droite */
+.droite {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-right: 20px;
+}
+
+.droite img {
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+}
+
+.droite img:hover,
+.gauche img:hover {
+    transform: scale(1.4);
+}
+
+.connexion-lien {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.connexion-lien:hover {
+    color: #5c8374;
+}
+
+/* Style du texte central */
+.centre {
+    text-align: center;
+    font-size: large;
+    flex-grow: 1;
+}
+
+/* Styles pour la page de connexion */
+.login-page {
+    min-height: calc(100vh - 300px); /* Espace pour header et footer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    margin-top: 80px; /* Ajout d'une marge supérieure pour l'espace après le header */
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ajouté pour inclure padding dans la largeur */
+}
+
+/* Le reste des styles reste identique */
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre tous les éléments du formulaire */
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-input {
+    width: 100%;
+    box-sizing: border-box; /* S'assure que le padding ne dépasse pas */
+    padding: 12px 15px;
+    border: 2px solid #5c8374;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.login-button {
+    width: 100%;
+    max-width: 200px; /* Ajouté pour un bouton moins large */
+    padding: 12px;
+    background-color: #5c8374;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.register-section {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.register-section p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.register-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #5c8374;
+    border: 2px solid #5c8374;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.register-button:hover {
+    background-color: #5c8374;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Pour les effets hover et transition */
+.login-button:hover {
+    background-color: #496b5e;
+    transform: translateY(-2px);
+}
+
+.login-input:focus {
+    border-color: #496b5e;
+    outline: none;
+}
+
+/* Styles pour la description/texte */
+.login-description {
+    color: #666;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Styles pour le titre */
+.login-container h2 {
+    color: #5c8374;
+    text-align: center;
+    margin-bottom: 15px;
+}
+

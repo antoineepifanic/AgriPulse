@@ -3,79 +3,194 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Accueil</title>
+<title>AgriPulse - Connexion Agriculture & Étudiants</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 <!-- Inclusion du header -->
 <div id="header-container"></div>
-<main class="container">
-<!-- Zone principale (85%) -->
-<div class="main-content">
-<div class="video-container">
-<!-- Zone pour une vidéo -->
-<video controls>
-<source src="video.mp4" type="video/mp4">
- Votre navigateur ne supporte pas la lecture de vidéos.
-</video>
+
+<!-- Navigation -->
+<div class="nav-links">
+  <a href="#" id="agriculteur-link">Je suis agriculteur</a>
+  <a href="#" id="etudiant-link">Je suis étudiant</a>
 </div>
-<!-- Remplace ta div button-container par ce code -->
-<div class="button-container">
-<!-- Bouton Agriculture (Blé) -->
-<div class="custom-button">
-<svg viewBox="0 0 24 24" class="button-icon">
-<path d="M12,2 L12,22 M12,7 L9,4 M12,10 L15,7 M12,13 L9,10 M12,16 L15,13" stroke="#056705" stroke-width="2" fill="none" stroke-linecap="round"/>
-<circle cx="9" cy="4" r="1.5" fill="#056705"/>
-<circle cx="15" cy="7" r="1.5" fill="#056705"/>
-<circle cx="9" cy="10" r="1.5" fill="#056705"/>
-<circle cx="15" cy="13" r="1.5" fill="#056705"/>
-</svg>
-<span>Agriculture</span>
-</div>
-<!-- Bouton Élevage (Vache) -->
-<div class="custom-button">
-<svg viewBox="0 0 24 24" class="button-icon">
-<path d="M4,12 Q4,8 8,8 L16,8 Q20,8 20,12 L20,16 Q20,18 18,18 L6,18 Q4,18 4,16 Z" fill="none" stroke="#056705" stroke-width="1.5"/>
-<circle cx="8" cy="7" r="2" fill="#056705"/>
-<circle cx="16" cy="7" r="2" fill="#056705"/>
-<circle cx="9" cy="13" r="1" fill="#056705"/>
-<circle cx="15" cy="13" r="1" fill="#056705"/>
-<path d="M10,16 Q12,17 14,16" fill="none" stroke="#056705" stroke-width="1" stroke-linecap="round"/>
-</svg>
-<span>Élevage</span>
-</div>
-<!-- Bouton Marché (Étal) -->
-<div class="custom-button">
-<svg viewBox="0 0 24 24" class="button-icon">
-<path d="M3,6 L21,6 L19,10 L5,10 Z" fill="none" stroke="#056705" stroke-width="1.5"/>
-<path d="M5,10 L5,18 L19,18 L19,10" fill="none" stroke="#056705" stroke-width="1.5"/>
-<path d="M5,10 L5,18 L11,18 L11,10" fill="none" stroke="#056705" stroke-width="1.5"/>
-<path d="M19,10 L19,18 L13,18 L13,10" fill="none" stroke="#056705" stroke-width="1.5"/>
-<circle cx="7" cy="8" r="1" fill="#056705"/>
-<circle cx="12" cy="8" r="1" fill="#056705"/>
-<circle cx="17" cy="8" r="1" fill="#056705"/>
-</svg>
-<span>Marché</span>
-</div>
-<!-- Bouton Analyse (Ordinateur) -->
-<div class="custom-button">
-<svg viewBox="0 0 24 24" class="button-icon">
-<path d="M5,6 L19,6 L19,16 L5,16 Z" fill="none" stroke="#056705" stroke-width="1.5"/>
-<path d="M3,16 L21,16 L21,18 L3,18 Z" fill="none" stroke="#056705" stroke-width="1.5"/>
-<path d="M10,18 L14,18 L14,20 L10,20 Z" fill="none" stroke="#056705" stroke-width="1.5"/>
-<path d="M9,12 L15,12" stroke="#056705" stroke-width="1.5" stroke-linecap="round"/>
-<path d="M9,9 L15,9" stroke="#056705" stroke-width="1.5" stroke-linecap="round"/>
-</svg>
-<span>Analyse</span>
-</div>
-</div>
-</div>
-<!-- Zone d'informations (15%) -->
-<aside class="info-section">
-<h2>Infos</h2>
-<p>AgriPulse va nous rapporter un max de thunes parce qu'on va gagner le PCE</p>
-</aside>
-</main>
+
+<!-- Section hero avec image de fond -->
+<section class="hero-banner">
+  <div class="hero-content">
+    <h1>Connectez le monde agricole et étudiant</h1>
+    <p class="hero-subtitle">Trouvez rapidement une main d'œuvre qualifiée ou des missions rémunérées</p>
+    <div class="cta-buttons">
+      <a href="#agriculteur-section" class="cta-button primary">Je suis agriculteur</a>
+      <a href="#etudiant-section" class="cta-button secondary">Je suis étudiant</a>
+    </div>
+  </div>
+</section>
+
+<!-- Section présentation -->
+<section class="presentation">
+  <div class="presentation-container">
+    <div class="presentation-text">
+      <h2>AgriPulse : la plateforme qui révolutionne le travail agricole</h2>
+      <p>Notre mission est de faciliter la rencontre entre les agriculteurs en recherche de main d'œuvre et les étudiants souhaitant travailler dans le secteur agricole.</p>
+      <p>Grâce à notre plateforme innovante, trouvez rapidement la personne ou la mission qui vous convient.</p>
+    </div>
+    <div class="video-container">
+      <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos.
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- Comment ça marche -->
+<section id="how-it-works" class="how-it-works">
+  <h2 class="section-title">Comment ça marche ?</h2>
+  <div class="steps-container">
+    <div class="step">
+      <div class="step-number">1</div>
+      <h3>Créez votre profil</h3>
+      <p>Inscrivez-vous en tant qu'agriculteur ou étudiant en quelques minutes</p>
+    </div>
+    <div class="step">
+      <div class="step-number">2</div>
+      <h3>Publiez ou trouvez des missions</h3>
+      <p>Les agriculteurs publient leurs besoins, les étudiants peuvent postuler</p>
+    </div>
+    <div class="step">
+      <div class="step-number">3</div>
+      <h3>Travaillez ensemble</h3>
+      <p>Collaborez efficacement et validez le travail effectué sur la plateforme</p>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="services">
+  <h2 class="section-title">Nos services</h2>
+  <div class="button-container">
+    <!-- Bouton Agriculture (Blé) -->
+    <div class="custom-button">
+      <svg viewBox="0 0 24 24" class="button-icon">
+        <path d="M12,2 L12,22 M12,7 L9,4 M12,10 L15,7 M12,13 L9,10 M12,16 L15,13" stroke="#4B7F52" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <circle cx="9" cy="4" r="1.5" fill="#4B7F52"/>
+        <circle cx="15" cy="7" r="1.5" fill="#4B7F52"/>
+        <circle cx="9" cy="10" r="1.5" fill="#4B7F52"/>
+        <circle cx="15" cy="13" r="1.5" fill="#4B7F52"/>
+      </svg>
+      <span>Agriculture</span>
+      <p class="service-description">Aide aux cultures, semis, récoltes et entretien</p>
+    </div>
+    <!-- Bouton Élevage (Vache) -->
+    <div class="custom-button">
+      <svg viewBox="0 0 24 24" class="button-icon">
+        <path d="M4,12 Q4,8 8,8 L16,8 Q20,8 20,12 L20,16 Q20,18 18,18 L6,18 Q4,18 4,16 Z" fill="none" stroke="#4B7F52" stroke-width="1.5"/>
+        <circle cx="8" cy="7" r="2" fill="#4B7F52"/>
+        <circle cx="16" cy="7" r="2" fill="#4B7F52"/>
+        <circle cx="9" cy="13" r="1" fill="#4B7F52"/>
+        <circle cx="15" cy="13" r="1" fill="#4B7F52"/>
+        <path d="M10,16 Q12,17 14,16" fill="none" stroke="#4B7F52" stroke-width="1" stroke-linecap="round"/>
+      </svg>
+      <span>Élevage</span>
+      <p class="service-description">Soin aux animaux et entretien des installations</p>
+    </div>
+    <!-- Bouton Marché (Étal) -->
+    <div class="custom-button">
+      <svg viewBox="0 0 24 24" class="button-icon">
+        <path d="M3,6 L21,6 L19,10 L5,10 Z" fill="none" stroke="#4B7F52" stroke-width="1.5"/>
+        <path d="M5,10 L5,18 L19,18 L19,10" fill="none" stroke="#4B7F52" stroke-width="1.5"/>
+        <path d="M5,10 L5,18 L11,18 L11,10" fill="none" stroke="#4B7F52" stroke-width="1.5"/>
+        <path d="M19,10 L19,18 L13,18 L13,10" fill="none" stroke="#4B7F52" stroke-width="1.5"/>
+        <circle cx="7" cy="8" r="1" fill="#4B7F52"/>
+        <circle cx="12" cy="8" r="1" fill="#4B7F52"/>
+        <circle cx="17" cy="8" r="1" fill="#4B7F52"/>
+      </svg>
+      <span>Marché</span>
+      <p class="service-description">Aide à la vente et circuits courts</p>
+    </div>
+    <!-- Bouton Analyse (Ordinateur) -->
+    <div class="custom-button">
+      <svg viewBox="0 0 24 24" class="button-icon">
+        <path d="M5,6 L19,6 L19,16 L5,16 Z" fill="none" stroke="#4B7F52" stroke-width="1.5"/>
+        <path d="M3,16 L21,16 L21,18 L3,18 Z" fill="none" stroke="#4B7F52" stroke-width="1.5"/>
+        <path d="M10,18 L14,18 L14,20 L10,20 Z" fill="none" stroke="#4B7F52" stroke-width="1.5"/>
+        <path d="M9,12 L15,12" stroke="#4B7F52" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M9,9 L15,9" stroke="#4B7F52" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <span>Analyse</span>
+      <p class="service-description">Support administratif et analyse de données</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <h2 class="section-title">Questions fréquentes</h2>
+  <div class="faq-container">
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>Comment les paiements sont-ils gérés ?</h3>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Nous assurons la sécurité des paiements via notre plateforme. L'argent est versé une fois que la mission est confirmée comme terminée.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>Quelles garanties pour les agriculteurs ?</h3>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Tous les étudiants sont vérifiés et notés. Vous pouvez consulter leurs profils et évaluations avant d'accepter une candidature.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>Faut-il une expérience agricole pour les étudiants ?</h3>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Non, certaines missions sont adaptées aux débutants. Chaque offre précise le niveau d'expérience requis.</p>
+      </div>
+    </div>
+  </div>
+  <div class="faq-more">
+    <a href="faq.html" class="link-button">Voir toutes les questions <i class="fas fa-arrow-right"></i></a>
+  </div>
+</section>
+
+<!-- Statistiques -->
+<section class="stats-section">
+  <div class="stats-container">
+    <div class="stat-item">
+      <div class="stat-number">250+</div>
+      <div class="stat-label">Agriculteurs inscrits</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">800+</div>
+      <div class="stat-label">Étudiants actifs</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">3000+</div>
+      <div class="stat-label">Missions réalisées</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">92%</div>
+      <div class="stat-label">Taux de satisfaction</div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to action -->
+<section class="cta-section">
+  <h2>Prêt à rejoindre l'aventure AgriPulse ?</h2>
+  <p>Inscrivez-vous gratuitement et commencez à créer des liens entre le monde agricole et étudiant</p>
+  <a href="inscription.html" class="cta-button">S'inscrire maintenant</a>
+</section>
 
 <!-- Inclusion du footer -->
 <div id="footer-container"></div>
@@ -83,13 +198,30 @@
 <script>
 // Charger le header dynamiquement
 fetch('header.html')
- .then(response => response.text())
- .then(data => document.getElementById('header-container').innerHTML = data);
+  .then(response => response.text())
+  .then(data => document.getElementById('header-container').innerHTML = data);
 
 // Charger le footer dynamiquement
 fetch('footer.html')
- .then(response => response.text())
- .then(data => document.getElementById('footer-container').innerHTML = data);
+  .then(response => response.text())
+  .then(data => document.getElementById('footer-container').innerHTML = data);
+
+// Script pour la FAQ
+document.addEventListener('DOMContentLoaded', function() {
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+      const answer = question.nextElementSibling;
+      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      
+      // Toggle icon
+      const icon = question.querySelector('i');
+      icon.classList.toggle('fa-chevron-down');
+      icon.classList.toggle('fa-chevron-up');
+    });
+  });
+});
 </script>
 </body>
 </html>

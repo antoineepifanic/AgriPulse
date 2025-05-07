@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services de Marché - AgriPulse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .service-container {
+            max-width: 1000px;
+            margin: 6rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .service-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .service-header h1 {
+            color: #4B7F52;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-header p {
+            color: #666;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .service-section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .service-section h2 {
+            color: #4B7F52;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .service-section h2 i {
+            font-size: 1.5rem;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            color: #4B7F52;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #4B7F52;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        .cta-button:hover {
+            background-color: #3d6642;
+        }
+
+        .highlight-box {
+            background: #e8f5e9;
+            border-left: 4px solid #4B7F52;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .market-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .stat-card i {
+            font-size: 2rem;
+            color: #4B7F52;
+            margin-bottom: 1rem;
+        }
+
+        .stat-card h3 {
+            color: #4B7F52;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-card p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inclusion du header -->
+    <div id="header-container"></div>
+
+    <div class="service-container">
+        <div class="service-header">
+            <h1>Services de Marché</h1>
+            <p>Des solutions innovantes pour connecter les agriculteurs avec les opportunités du marché et optimiser leurs débouchés commerciaux.</p>
+        </div>
+
+        <div class="market-stats">
+            <div class="stat-card">
+                <i class="fas fa-users"></i>
+                <h3>5000+</h3>
+                <p>Agriculteurs actifs</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-handshake"></i>
+                <h3>10000+</h3>
+                <p>Missions réalisées</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>100%</h3>
+                <p>Couverture nationale</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-star"></i>
+                <h3>4.8/5</h3>
+                <p>Satisfaction client</p>
+            </div>
+        </div>
+
+        <div class="service-section">
+            <h2><i class="fas fa-chart-line"></i> Analyse de Marché</h2>
+            <p>Des insights précieux pour prendre les bonnes décisions :</p>
+
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3><i class="fas fa-chart-bar"></i> Tendances</h3>
+                    <p>Analyse des tendances du marché agricole et des opportunités émergentes</p>
+                </div>
+                <div class="service-card">
+                    <h3><i class="fas fa-search-dollar"></i> Prix</h3>
+                    <p>Suivi des prix du marché et des variations saisonnières</p>
+                </div>
+                <div class="service-card">
+                    <h3><i class="fas fa-globe-europe"></i> Marchés</h3>
+                    <p>Analyse des marchés locaux et internationaux</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-section">
+            <h2><i class="fas fa-handshake"></i> Mise en Relation</h2>
+            <p>Connectez-vous avec les bonnes opportunités :</p>
+
+            <div class="highlight-box">
+                <h3>Nos services de mise en relation :</h3>
+                <ul>
+                    <li>Mise en relation avec des acheteurs qualifiés</li>
+                    <li>Accès à des marchés spécialisés</li>
+                    <li>Opportunités d'exportation</li>
+                    <li>Réseau de partenaires commerciaux</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-section">
+            <h2><i class="fas fa-tools"></i> Outils de Gestion</h2>
+            <p>Des outils pour optimiser votre activité commerciale :</p>
+
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3><i class="fas fa-file-invoice"></i> Facturation</h3>
+                    <p>Gestion simplifiée de la facturation et des paiements</p>
+                </div>
+                <div class="service-card">
+                    <h3><i class="fas fa-truck"></i> Logistique</h3>
+                    <p>Solutions de transport et de stockage</p>
+                </div>
+                <div class="service-card">
+                    <h3><i class="fas fa-calculator"></i> Comptabilité</h3>
+                    <p>Suivi financier et analyse de rentabilité</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-section">
+            <h2><i class="fas fa-graduation-cap"></i> Formation et Conseil</h2>
+            <p>Des ressources pour développer vos compétences commerciales :</p>
+
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3><i class="fas fa-book"></i> Formations</h3>
+                    <p>Modules de formation sur la commercialisation</p>
+                </div>
+                <div class="service-card">
+                    <h3><i class="fas fa-comments"></i> Conseil</h3>
+                    <p>Accompagnement personnalisé pour votre stratégie commerciale</p>
+                </div>
+                <div class="service-card">
+                    <h3><i class="fas fa-lightbulb"></i> Innovation</h3>
+                    <p>Veille sur les nouvelles pratiques commerciales</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="inscription-agriculteur.html" class="cta-button">Inscrivez-vous maintenant</a>
+        </div>
+    </div>
+
+    <!-- Inclusion du footer -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Charger le header dynamiquement
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+
+        // Charger le footer dynamiquement
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+    </script>
+</body>
+</html> 

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité - AgriPulse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .legal-container {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .legal-container h1 {
+            color: #4B7F52;
+            margin-bottom: 2rem;
+        }
+
+        .legal-container h2 {
+            color: #4B7F52;
+            margin: 2rem 0 1rem 0;
+        }
+
+        .legal-container p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .legal-container ul {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+        }
+
+        .legal-container li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inclusion du header -->
+    <div id="header-container"></div>
+
+    <div class="legal-container">
+        <h1>Politique de Confidentialité</h1>
+
+        <h2>1. Collecte des informations</h2>
+        <p>AgriPulse collecte les informations suivantes :</p>
+        <ul>
+            <li>Informations d'identification (nom, prénom, email, téléphone)</li>
+            <li>Informations professionnelles (type d'exploitation, expérience)</li>
+            <li>Données de localisation</li>
+            <li>Informations sur les préférences et disponibilités</li>
+        </ul>
+
+        <h2>2. Utilisation des informations</h2>
+        <p>Les informations collectées sont utilisées pour :</p>
+        <ul>
+            <li>Faciliter la mise en relation entre agriculteurs et actifs</li>
+            <li>Personnaliser l'expérience utilisateur</li>
+            <li>Améliorer nos services</li>
+            <li>Communiquer avec vous concernant votre compte</li>
+        </ul>
+
+        <h2>3. Protection des données</h2>
+        <p>AgriPulse s'engage à protéger vos données personnelles. Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos informations contre tout accès non autorisé, modification, divulgation ou destruction.</p>
+
+        <h2>4. Partage des informations</h2>
+        <p>Vos informations personnelles ne seront jamais vendues à des tiers. Elles peuvent être partagées avec :</p>
+        <ul>
+            <li>Les agriculteurs ou actifs avec lesquels vous êtes mis en relation</li>
+            <li>Nos prestataires de services (hébergement, maintenance)</li>
+            <li>Les autorités compétentes si la loi l'exige</li>
+        </ul>
+
+        <h2>5. Vos droits</h2>
+        <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+        <ul>
+            <li>Droit d'accès à vos données</li>
+            <li>Droit de rectification</li>
+            <li>Droit à l'effacement</li>
+            <li>Droit à la limitation du traitement</li>
+            <li>Droit à la portabilité des données</li>
+            <li>Droit d'opposition</li>
+        </ul>
+
+        <h2>6. Conservation des données</h2>
+        <p>Vos données sont conservées aussi longtemps que nécessaire pour atteindre les objectifs décrits dans cette politique de confidentialité, sauf si une période de conservation plus longue est requise ou permise par la loi.</p>
+
+        <h2>7. Contact</h2>
+        <p>Pour toute question concernant cette politique de confidentialité ou pour exercer vos droits, vous pouvez nous contacter à :</p>
+        <p>Email : privacy@agripulse.fr<br>
+        Adresse : 123 Avenue de l'Agriculture, 75001 Paris</p>
+    </div>
+
+    <!-- Inclusion du footer -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Charger le header dynamiquement
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+
+        // Charger le footer dynamiquement
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+    </script>
+</body>
+</html> 

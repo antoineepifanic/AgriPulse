@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions d'Utilisation - AgriPulse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .legal-container {
+            max-width: 800px;
+            margin: 6rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .legal-container h1 {
+            color: #4B7F52;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .legal-container h2 {
+            color: #4B7F52;
+            margin: 2rem 0 1rem 0;
+            border-bottom: 2px solid #4B7F52;
+            padding-bottom: 0.5rem;
+        }
+
+        .legal-container p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .legal-container ul {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+        }
+
+        .legal-container li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border-left: 4px solid #4B7F52;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inclusion du header -->
+    <div id="header-container"></div>
+
+    <div class="legal-container">
+        <h1>Conditions d'Utilisation</h1>
+
+        <h2>1. Acceptation des conditions</h2>
+        <p>En accédant et en utilisant AgriPulse, vous acceptez d'être lié par les présentes conditions d'utilisation. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser notre plateforme.</p>
+
+        <h2>2. Description du service</h2>
+        <p>AgriPulse est une plateforme de mise en relation entre agriculteurs et actifs cherchant du travail dans le secteur agricole. Notre service comprend :</p>
+        <ul>
+            <li>La création de profils pour agriculteurs et actifs</li>
+            <li>La publication et la recherche de missions agricoles</li>
+            <li>La mise en relation entre les parties</li>
+            <li>Le suivi des missions et des paiements</li>
+        </ul>
+
+        <h2>3. Inscription et compte utilisateur</h2>
+        <div class="highlight">
+            <p>Pour utiliser AgriPulse, vous devez :</p>
+            <ul>
+                <li>Avoir au moins 16 ans</li>
+                <li>Fournir des informations exactes et complètes</li>
+                <li>Maintenir la confidentialité de votre compte</li>
+                <li>Ne pas partager vos identifiants</li>
+            </ul>
+        </div>
+
+        <h2>4. Obligations des utilisateurs</h2>
+        <p>En tant qu'utilisateur d'AgriPulse, vous vous engagez à :</p>
+        <ul>
+            <li>Respecter les lois et réglementations en vigueur</li>
+            <li>Ne pas publier de contenu illégal ou inapproprié</li>
+            <li>Ne pas usurper l'identité d'autres personnes</li>
+            <li>Ne pas utiliser la plateforme à des fins frauduleuses</li>
+        </ul>
+
+        <h2>5. Paiements et commissions</h2>
+        <p>AgriPulse prélève une commission de 10% sur chaque transaction réussie. Les paiements sont sécurisés et effectués via notre plateforme.</p>
+
+        <h2>6. Propriété intellectuelle</h2>
+        <p>Tout le contenu présent sur AgriPulse (textes, images, logos, etc.) est protégé par les droits de propriété intellectuelle. Toute reproduction non autorisée est interdite.</p>
+
+        <h2>7. Limitation de responsabilité</h2>
+        <div class="highlight">
+            <p>AgriPulse ne peut être tenu responsable :</p>
+            <ul>
+                <li>Des contenus publiés par les utilisateurs</li>
+                <li>Des litiges entre agriculteurs et actifs</li>
+                <li>Des pertes de données ou interruptions de service</li>
+            </ul>
+        </div>
+
+        <h2>8. Modification des conditions</h2>
+        <p>AgriPulse se réserve le droit de modifier ces conditions à tout moment. Les utilisateurs seront informés des changements importants par email.</p>
+
+        <h2>9. Contact</h2>
+        <p>Pour toute question concernant ces conditions d'utilisation, contactez-nous à :</p>
+        <p>Email : legal@agripulse.fr<br>
+        Adresse : 123 Avenue de l'Agriculture, 75001 Paris</p>
+    </div>
+
+    <!-- Inclusion du footer -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Charger le header dynamiquement
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+
+        // Charger le footer dynamiquement
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+    </script>
+</body>
+</html> 

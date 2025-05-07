@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription Actif - AgriPulse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Script de live reload -->
+    <script>
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+        ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+    <style>
+        .inscription-container {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .form-section {
+            margin-bottom: 2rem;
+        }
+
+        .form-section h3 {
+            color: #4B7F52;
+            margin-bottom: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .submit-button {
+            background-color: #4B7F52;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-button:hover {
+            background-color: #3d6640;
+        }
+
+        .required {
+            color: #ff4444;
+        }
+
+        .confirmation-section {
+            display: none;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .confirmation-section h2 {
+            color: #4B7F52;
+            margin-bottom: 1.5rem;
+        }
+
+        .confirmation-section p {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .confirmation-icon {
+            font-size: 4rem;
+            color: #4B7F52;
+            margin-bottom: 1.5rem;
+        }
+
+        .back-home-button {
+            display: inline-block;
+            background-color: #4B7F52;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .back-home-button:hover {
+            background-color: #3d6640;
+        }
+
+        .checkbox-group {
+            margin-top: 1rem;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: auto;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inclusion du header -->
+    <div id="header-container"></div>
+
+    <div class="inscription-container">
+        <!-- Formulaire d'inscription -->
+        <div id="inscription-form-container">
+            <h1>Inscription Actif</h1>
+            <p>Rejoignez AgriPulse et trouvez des missions agricoles qui correspondent à vos compétences et disponibilités.</p>
+
+            <form id="inscription-form">
+                <!-- Informations personnelles -->
+                <div class="form-section">
+                    <h3>Informations personnelles</h3>
+                    <div class="form-group">
+                        <label for="nom">Nom <span class="required">*</span></label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom">Prénom <span class="required">*</span></label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Téléphone <span class="required">*</span></label>
+                        <input type="tel" id="telephone" name="telephone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Âge <span class="required">*</span></label>
+                        <input type="number" id="age" name="age" min="16" max="99" required>
+                    </div>
+                </div>
+
+                <!-- Disponibilités -->
+                <div class="form-section">
+                    <h3>Disponibilités</h3>
+                    <div class="form-group">
+                        <label for="type-engagement">Type d'engagement souhaité <span class="required">*</span></label>
+                        <select id="type-engagement" name="type-engagement" required>
+                            <option value="">Sélectionnez un type</option>
+                            <option value="saisonnier">Saisonnier</option>
+                            <option value="permanent">Permanent</option>
+                            <option value="occasionnel">Occasionnel</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Disponibilités hebdomadaires <span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="disponibilites" value="lundi"> Lundi
+                            </label>
+                            <label>
+                                <input type="checkbox" name="disponibilites" value="mardi"> Mardi
+                            </label>
+                            <label>
+                                <input type="checkbox" name="disponibilites" value="mercredi"> Mercredi
+                            </label>
+                            <label>
+                                <input type="checkbox" name="disponibilites" value="jeudi"> Jeudi
+                            </label>
+                            <label>
+                                <input type="checkbox" name="disponibilites" value="vendredi"> Vendredi
+                            </label>
+                            <label>
+                                <input type="checkbox" name="disponibilites" value="samedi"> Samedi
+                            </label>
+                            <label>
+                                <input type="checkbox" name="disponibilites" value="dimanche"> Dimanche
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="zone-geographique">Zone géographique souhaitée <span class="required">*</span></label>
+                        <input type="text" id="zone-geographique" name="zone-geographique" 
+                               placeholder="Ex: Région parisienne, Nord de la France..." required>
+                    </div>
+                </div>
+
+                <!-- Compétences et expériences -->
+                <div class="form-section">
+                    <h3>Compétences et expériences</h3>
+                    <div class="form-group">
+                        <label>Types de travaux agricoles d'intérêt <span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="competences" value="cereales"> Céréales
+                            </label>
+                            <label>
+                                <input type="checkbox" name="competences" value="elevage"> Élevage
+                            </label>
+                            <label>
+                                <input type="checkbox" name="competences" value="viticulture"> Viticulture
+                            </label>
+                            <label>
+                                <input type="checkbox" name="competences" value="maraichage"> Maraîchage
+                            </label>
+                            <label>
+                                <input type="checkbox" name="competences" value="arboriculture"> Arboriculture
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Expérience agricole</label>
+                        <textarea id="experience" name="experience" 
+                            placeholder="Décrivez vos expériences précédentes dans l'agriculture, si vous en avez"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="permis">Permis de conduire</label>
+                        <select id="permis" name="permis">
+                            <option value="aucun">Aucun</option>
+                            <option value="b">Permis B</option>
+                            <option value="c">Permis C</option>
+                            <option value="tracteur">Permis tracteur</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-button">S'inscrire</button>
+            </form>
+        </div>
+
+        <!-- Section de confirmation -->
+        <div id="confirmation-section" class="confirmation-section">
+            <i class="fas fa-check-circle confirmation-icon"></i>
+            <h2>Inscription réussie !</h2>
+            <p>Merci de vous être inscrit sur AgriPulse. Notre équipe va étudier votre profil et vous contactera dans les plus brefs délais pour finaliser votre inscription.</p>
+            <p>En attendant, vous pouvez retourner à l'accueil pour découvrir les opportunités disponibles.</p>
+            <a href="index.html" class="back-home-button">Retour à l'accueil</a>
+        </div>
+    </div>
+
+    <!-- Inclusion du footer -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Charger le header dynamiquement
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+
+        // Charger le footer dynamiquement
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+
+        // Gestion du formulaire
+        document.getElementById('inscription-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Cacher le formulaire
+            document.getElementById('inscription-form-container').style.display = 'none';
+            // Afficher la confirmation
+            document.getElementById('confirmation-section').style.display = 'block';
+        });
+    </script>
+</body>
+</html> 

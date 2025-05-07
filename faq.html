@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - AgriPulse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .faq-container {
+            max-width: 1000px;
+            margin: 6rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .faq-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .faq-header h1 {
+            color: #4B7F52;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .faq-header p {
+            color: #666;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-section {
+            margin-bottom: 3rem;
+        }
+
+        .faq-section h2 {
+            color: #4B7F52;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border-bottom: 2px solid #4B7F52;
+            padding-bottom: 0.5rem;
+        }
+
+        .faq-section h2 i {
+            font-size: 1.5rem;
+        }
+
+        .faq-item {
+            background: #f8f9fa;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: #e8f5e9;
+        }
+
+        .faq-question h3 {
+            color: #4B7F52;
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 1.5rem;
+            max-height: 1000px;
+        }
+
+        .faq-item.active .faq-question {
+            background: #e8f5e9;
+        }
+
+        .highlight-box {
+            background: #e8f5e9;
+            border-left: 4px solid #4B7F52;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .contact-info h3 {
+            color: #4B7F52;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inclusion du header -->
+    <div id="header-container"></div>
+
+    <div class="faq-container">
+        <div class="faq-header">
+            <h1>Questions Fréquentes</h1>
+            <p>Trouvez rapidement des réponses à vos questions sur AgriPulse</p>
+        </div>
+
+        <div class="faq-section">
+            <h2><i class="fas fa-user-tie"></i> Pour les Agriculteurs</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment fonctionne le recrutement via AgriPulse ?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>AgriPulse simplifie le processus de recrutement en prenant en charge l'ensemble des démarches administratives. Une fois que vous avez trouvé le candidat idéal, nous gérons :</p>
+                    <ul>
+                        <li>La rédaction et l'envoi des contrats</li>
+                        <li>Les déclarations sociales</li>
+                        <li>Le traitement des salaires</li>
+                        <li>Le suivi administratif</li>
+                    </ul>
+                    <p>Vous pouvez ainsi vous concentrer sur votre cœur de métier.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Quels sont les avantages d'utiliser AgriPulse ?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>AgriPulse vous offre plusieurs avantages clés :</p>
+                    <ul>
+                        <li>Gain de temps considérable dans la gestion administrative</li>
+                        <li>Accès à une large base de candidats qualifiés</li>
+                        <li>Service client réactif et disponible 7j/7</li>
+                        <li>Plateforme sécurisée et conforme aux normes RGPD</li>
+                        <li>Suivi personnalisé de vos besoins en recrutement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2><i class="fas fa-users"></i> Pour les Actifs</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment fonctionne le statut d'emploi avec AgriPulse ?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Lorsque vous travaillez via AgriPulse, vous êtes directement salarié de l'agriculteur. AgriPulse s'occupe de :</p>
+                    <ul>
+                        <li>La gestion de votre contrat de travail</li>
+                        <li>Le traitement de votre salaire</li>
+                        <li>Vos déclarations sociales</li>
+                        <li>Votre suivi administratif</li>
+                    </ul>
+                    <p>Vous bénéficiez ainsi d'un statut stable et sécurisé.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Quelles sont les garanties offertes par AgriPulse ?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>AgriPulse vous garantit :</p>
+                    <ul>
+                        <li>Un paiement sécurisé et à temps</li>
+                        <li>Un suivi personnalisé de votre carrière</li>
+                        <li>Une assistance administrative complète</li>
+                        <li>Un support client disponible 7j/7</li>
+                        <li>Une protection de vos données personnelles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2><i class="fas fa-shield-alt"></i> Sécurité et Confidentialité</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment AgriPulse protège mes données ?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>La sécurité de vos données est notre priorité. Nous mettons en place :</p>
+                    <ul>
+                        <li>Un chiffrement de bout en bout des données sensibles</li>
+                        <li>Des serveurs sécurisés et régulièrement audités</li>
+                        <li>Une conformité stricte au RGPD</li>
+                        <li>Des contrôles d'accès rigoureux</li>
+                        <li>Des sauvegardes régulières des données</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment sont sécurisées les transactions ?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Nos transactions sont sécurisées par :</p>
+                    <ul>
+                        <li>Un système de paiement certifié PCI DSS</li>
+                        <li>Une double authentification pour les opérations sensibles</li>
+                        <li>Des contrôles anti-fraude en temps réel</li>
+                        <li>Une traçabilité complète des transactions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <h3>Vous n'avez pas trouvé votre réponse ?</h3>
+            <p>Notre équipe est disponible pour vous aider :</p>
+            <p><i class="fas fa-phone"></i> 01 23 45 67 89</p>
+            <p><i class="fas fa-envelope"></i> support@agripulse.fr</p>
+            <p>Service client disponible 7j/7 de 8h à 20h</p>
+        </div>
+    </div>
+
+    <!-- Inclusion du footer -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Charger le header dynamiquement
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+
+        // Charger le footer dynamiquement
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+
+        // Gestion des FAQ accordéons
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services d'Analyse - AgriPulse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .service-container {
+            max-width: 1000px;
+            margin: 6rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .service-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .service-header h1 {
+            color: #4B7F52;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-header p {
+            color: #666;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .service-section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .service-section h2 {
+            color: #4B7F52;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .service-section h2 i {
+            font-size: 1.5rem;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            color: #4B7F52;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #4B7F52;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        .cta-button:hover {
+            background-color: #3d6642;
+        }
+
+        .highlight-box {
+            background: #e8f5e9;
+            border-left: 4px solid #4B7F52;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .feature-item i {
+            color: #4B7F52;
+            font-size: 1.5rem;
+            margin-top: 0.25rem;
+        }
+
+        .feature-content h4 {
+            color: #4B7F52;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-content p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inclusion du header -->
+    <div id="header-container"></div>
+
+    <div class="service-container">
+        <div class="service-header">
+            <h1>Services d'Analyse</h1>
+            <p>Des solutions d'analyse avancées pour optimiser votre exploitation agricole et prendre des décisions éclairées.</p>
+        </div>
+
+        <div class="service-section">
+            <h2><i class="fas fa-chart-line"></i> Analyses de Performance</h2>
+            <p>Des outils d'analyse pour mesurer et améliorer la performance de votre exploitation :</p>
+
+            <div class="feature-list">
+                <div class="feature-item">
+                    <i class="fas fa-calculator"></i>
+                    <div class="feature-content">
+                        <h4>Analyse Financière</h4>
+                        <p>Suivi des coûts, revenus et rentabilité de votre exploitation</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <div class="feature-content">
+                        <h4>Analyse de Production</h4>
+                        <p>Suivi des rendements et optimisation des processus</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-users"></i>
+                    <div class="feature-content">
+                        <h4>Analyse RH</h4>
+                        <p>Optimisation de la gestion du personnel et des ressources</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-section">
+            <h2><i class="fas fa-microscope"></i> Analyses Techniques</h2>
+            <p>Des analyses précises pour optimiser vos pratiques agricoles :</p>
+
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3><i class="fas fa-flask"></i> Analyses de Sol</h3>
+                    <p>Études approfondies de la composition et de la qualité des sols</p>
+                </div>
+                <div class="service-card">
+                    <h3><i class="fas fa-leaf"></i> Analyses Végétales</h3>
+                    <p>Évaluation de la santé et de la croissance des cultures</p>
+                </div>
+                <div class="service-card">
+                    <h3><i class="fas fa-tint"></i> Analyses d'Eau</h3>
+                    <p>Contrôle de la qualité et de l'utilisation de l'eau</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-section">
+            <h2><i class="fas fa-brain"></i> Intelligence Artificielle</h2>
+            <p>Des solutions innovantes basées sur l'IA pour prédire et optimiser :</p>
+
+            <div class="highlight-box">
+                <h3>Nos solutions d'IA :</h3>
+                <ul>
+                    <li>Prévisions météorologiques précises</li>
+                    <li>Prédiction des rendements</li>
+                    <li>Détection précoce des maladies</li>
+                    <li>Optimisation des ressources</li>
+                    <li>Recommandations personnalisées</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-section">
+            <h2><i class="fas fa-file-alt"></i> Rapports et Suivi</h2>
+            <p>Des rapports détaillés pour suivre l'évolution de votre exploitation :</p>
+
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3><i class="fas fa-calendar-alt"></i> Rapports Mensuels</h3>
+                    <p>Suivi mensuel des performances et des indicateurs clés</p>
+                </div>
+                <div class="service-card">
+                    <h3><i class="fas fa-chart-pie"></i> Analyses Comparatives</h3>
+                    <p>Comparaison avec les moyennes du secteur et les objectifs</p>
+                </div>
+                <div class="service-card">
+                    <h3><i class="fas fa-bullseye"></i> Objectifs</h3>
+                    <p>Définition et suivi des objectifs de performance</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-section">
+            <h2><i class="fas fa-graduation-cap"></i> Formation et Support</h2>
+            <p>Un accompagnement complet pour tirer le meilleur parti de vos analyses :</p>
+
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3><i class="fas fa-book"></i> Formation</h3>
+                    <p>Formation à l'utilisation des outils d'analyse</p>
+                </div>
+                <div class="service-card">
+                    <h3><i class="fas fa-comments"></i> Conseil</h3>
+                    <p>Accompagnement personnalisé dans l'interprétation des données</p>
+                </div>
+                <div class="service-card">
+                    <h3><i class="fas fa-headset"></i> Support</h3>
+                    <p>Assistance technique et support utilisateur</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="inscription-agriculteur.html" class="cta-button">Inscrivez-vous maintenant</a>
+        </div>
+    </div>
+
+    <!-- Inclusion du footer -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Charger le header dynamiquement
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+
+        // Charger le footer dynamiquement
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+    </script>
+</body>
+</html> 

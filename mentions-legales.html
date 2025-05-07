@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales - AgriPulse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .legal-container {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .legal-container h1 {
+            color: #4B7F52;
+            margin-bottom: 2rem;
+        }
+
+        .legal-container h2 {
+            color: #4B7F52;
+            margin: 2rem 0 1rem 0;
+        }
+
+        .legal-container p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .legal-container ul {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+        }
+
+        .legal-container li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inclusion du header -->
+    <div id="header-container"></div>
+
+    <div class="legal-container">
+        <h1>Mentions Légales</h1>
+
+        <h2>1. Informations légales</h2>
+        <p>Le site AgriPulse est édité par la société AgriPulse SAS, société par actions simplifiée au capital de 50 000 €, immatriculée au RCS de Paris sous le numéro B 123 456 789, dont le siège social est situé au 123 Avenue de l'Agriculture, 75001 Paris.</p>
+        <p>Numéro SIRET : 123 456 789 00010</p>
+        <p>Directeur de la publication : [Nom du directeur]</p>
+
+        <h2>2. Hébergement</h2>
+        <p>Le site AgriPulse est hébergé par :</p>
+        <p>AgriHost SAS<br>
+        456 Rue du Digital<br>
+        75002 Paris<br>
+        Téléphone : 01 23 45 67 89</p>
+
+        <h2>3. Propriété intellectuelle</h2>
+        <p>L'ensemble des éléments constituant le site AgriPulse (textes, graphismes, logiciels, photographies, images, vidéos, sons, plans, logos, marques, etc.) sont la propriété exclusive d'AgriPulse SAS ou de ses partenaires. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable d'AgriPulse SAS.</p>
+
+        <h2>4. Protection des données personnelles</h2>
+        <p>Conformément à la loi "Informatique et Libertés" du 6 janvier 1978 modifiée et au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant. Pour exercer ce droit, vous pouvez nous contacter à l'adresse suivante : contact@agripulse.fr</p>
+
+        <h2>5. Cookies</h2>
+        <p>Le site AgriPulse utilise des cookies pour améliorer votre expérience de navigation. Vous pouvez à tout moment désactiver l'utilisation de cookies en sélectionnant les paramètres appropriés de votre navigateur.</p>
+
+        <h2>6. Droit applicable</h2>
+        <p>Les présentes mentions légales sont soumises au droit français. En cas de litige, les tribunaux français seront seuls compétents.</p>
+    </div>
+
+    <!-- Inclusion du footer -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Charger le header dynamiquement
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+
+        // Charger le footer dynamiquement
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+    </script>
+</body>
+</html> 

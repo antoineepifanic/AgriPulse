@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services d'Agriculture - AgriPulse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .service-container {
+            max-width: 1000px;
+            margin: 6rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .service-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .service-header h1 {
+            color: #4B7F52;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-header p {
+            color: #666;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .service-section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .service-section h2 {
+            color: #4B7F52;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .service-section h2 i {
+            font-size: 1.5rem;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            color: #4B7F52;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #4B7F52;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        .cta-button:hover {
+            background-color: #3d6642;
+        }
+
+        .highlight-box {
+            background: #e8f5e9;
+            border-left: 4px solid #4B7F52;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inclusion du header -->
+    <div id="header-container"></div>
+
+    <div class="service-container">
+        <div class="service-header">
+            <h1>Services d'Agriculture</h1>
+            <p>Découvrez nos solutions complètes pour optimiser votre exploitation agricole et trouver la main-d'œuvre qualifiée dont vous avez besoin.</p>
+        </div>
+
+        <div class="service-section">
+            <h2><i class="fas fa-seedling"></i> Recrutement Agricole</h2>
+            <p>Nous mettons en relation les agriculteurs avec des travailleurs qualifiés pour tous types de cultures et de saisons.</p>
+            
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3><i class="fas fa-calendar-alt"></i> Saisonniers</h3>
+                    <p>Recrutement de personnel pour les périodes de pointe (récoltes, plantations, etc.)</p>
+                </div>
+                <div class="service-card">
+                    <h3><i class="fas fa-user-tie"></i> CDD/CDI</h3>
+                    <p>Recrutement de personnel permanent pour votre exploitation</p>
+                </div>
+                <div class="service-card">
+                    <h3><i class="fas fa-graduation-cap"></i> Apprentis</h3>
+                    <p>Accompagnement dans la formation et l'intégration d'apprentis</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-section">
+            <h2><i class="fas fa-chart-line"></i> Optimisation de l'Exploitation</h2>
+            <p>Des solutions pour améliorer la productivité et la rentabilité de votre exploitation.</p>
+
+            <div class="highlight-box">
+                <h3>Nos experts vous accompagnent dans :</h3>
+                <ul>
+                    <li>L'analyse de vos besoins en main-d'œuvre</li>
+                    <li>La planification des ressources humaines</li>
+                    <li>L'optimisation des processus de travail</li>
+                    <li>La formation du personnel</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-section">
+            <h2><i class="fas fa-handshake"></i> Accompagnement</h2>
+            <p>Un suivi personnalisé pour garantir la réussite de vos recrutements.</p>
+
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3><i class="fas fa-file-contract"></i> Gestion Administrative</h3>
+                    <p>Assistance dans la rédaction des contrats et la gestion des formalités</p>
+                </div>
+                <div class="service-card">
+                    <h3><i class="fas fa-comments"></i> Médiation</h3>
+                    <p>Support en cas de difficultés entre employeur et employé</p>
+                </div>
+                <div class="service-card">
+                    <h3><i class="fas fa-tools"></i> Formation</h3>
+                    <p>Programmes de formation adaptés à vos besoins spécifiques</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="inscription-agriculteur.html" class="cta-button">Inscrivez-vous maintenant</a>
+        </div>
+    </div>
+
+    <!-- Inclusion du footer -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Charger le header dynamiquement
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+
+        // Charger le footer dynamiquement
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+    </script>
+</body>
+</html> 

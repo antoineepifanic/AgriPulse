@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriPulse - Centre d'aide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Inclusion du header -->
+    <div id="header-container"></div>
+
+    <main class="help-center">
+        <div class="help-container">
+            <h1>Centre d'aide</h1>
+            <p class="help-description">Trouvez rapidement l'aide dont vous avez besoin</p>
+
+            <!-- Barre de recherche -->
+            <div class="search-container">
+                <input type="text" id="help-search" placeholder="Rechercher une aide...">
+                <button type="button"><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- Catégories principales -->
+            <div class="help-categories">
+                <div class="category-card">
+                    <i class="fas fa-user-plus"></i>
+                    <h3>Premiers pas</h3>
+                    <p>Guide d'inscription et prise en main</p>
+                    <a href="#premiers-pas" class="category-link">En savoir plus</a>
+                </div>
+
+                <div class="category-card">
+                    <i class="fas fa-tasks"></i>
+                    <h3>Gestion des missions</h3>
+                    <p>Créer et gérer vos missions</p>
+                    <a href="#missions" class="category-link">En savoir plus</a>
+                </div>
+
+                <div class="category-card">
+                    <i class="fas fa-wallet"></i>
+                    <h3>Paiements</h3>
+                    <p>Informations sur les paiements</p>
+                    <a href="#paiements" class="category-link">En savoir plus</a>
+                </div>
+
+                <div class="category-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Sécurité</h3>
+                    <p>Protection et confidentialité</p>
+                    <a href="#securite" class="category-link">En savoir plus</a>
+                </div>
+            </div>
+
+            <!-- Guides rapides -->
+            <section class="quick-guides">
+                <h2>Guides rapides</h2>
+                <div class="guides-grid">
+                    <div class="guide-item">
+                        <h4>Comment s'inscrire ?</h4>
+                        <p>Guide étape par étape pour créer votre compte</p>
+                        <a href="inscription-agriculteur.html" class="guide-link">Voir le guide</a>
+                    </div>
+
+                    <div class="guide-item">
+                        <h4>Publier une mission</h4>
+                        <p>Apprenez à créer et gérer vos missions</p>
+                        <a href="#publier-mission" class="guide-link">Voir le guide</a>
+                    </div>
+
+                    <div class="guide-item">
+                        <h4>Gérer les paiements</h4>
+                        <p>Informations sur le processus de paiement</p>
+                        <a href="#gerer-paiements" class="guide-link">Voir le guide</a>
+                    </div>
+
+                    <div class="guide-item">
+                        <h4>Profil et paramètres</h4>
+                        <p>Personnalisez votre expérience</p>
+                        <a href="#profil" class="guide-link">Voir le guide</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ rapide -->
+            <section class="quick-faq">
+                <h2>Questions fréquentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>Comment sont sécurisés les paiements ?</h4>
+                        <p>Nous utilisons un système de paiement sécurisé qui garantit la protection de vos transactions.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>Comment contacter le support ?</h4>
+                        <p>Notre équipe est disponible par téléphone et email pour vous aider.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>Comment modifier mon profil ?</h4>
+                        <p>Accédez à vos paramètres depuis votre tableau de bord.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>Comment annuler une mission ?</h4>
+                        <p>Consultez notre politique d'annulation dans les conditions d'utilisation.</p>
+                    </div>
+                </div>
+                <a href="faq.html" class="view-all-faq">Voir toutes les questions</a>
+            </section>
+
+            <!-- Contact direct -->
+            <section class="direct-contact">
+                <h2>Besoin d'aide supplémentaire ?</h2>
+                <p>Notre équipe est là pour vous aider</p>
+                <div class="contact-options">
+                    <a href="contact.html" class="contact-button">
+                        <i class="fas fa-envelope"></i>
+                        Nous contacter
+                    </a>
+                    <a href="tel:+33478354243" class="contact-button">
+                        <i class="fas fa-phone"></i>
+                        Appeler le support
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Inclusion du footer -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Charger le header et le footer
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+
+        // Fonction de recherche
+        document.getElementById('help-search').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            // Implémenter la logique de recherche ici
+        });
+    </script>
+</body>
+</html> 

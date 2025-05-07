@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriPulse - Choisir votre inscription</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Inclusion du header -->
+    <div id="header-container"></div>
+
+    <main class="inscription-choice">
+        <div class="choice-container">
+            <h1>Choisissez votre profil</h1>
+            <p class="choice-description">Sélectionnez le type de compte qui correspond à vos besoins</p>
+
+            <div class="choice-cards">
+                <a href="inscription-agriculteur.html" class="choice-card">
+                    <i class="fas fa-tractor"></i>
+                    <h2>Je suis agriculteur</h2>
+                    <p>Publiez des missions et trouvez des travailleurs qualifiés pour votre exploitation</p>
+                    <ul>
+                        <li>Publiez vos besoins en main d'œuvre</li>
+                        <li>Gérez vos missions facilement</li>
+                        <li>Accédez à un réseau de travailleurs qualifiés</li>
+                    </ul>
+                    <span class="choice-button">S'inscrire en tant qu'agriculteur</span>
+                </a>
+
+                <a href="inscription-actif.html" class="choice-card">
+                    <i class="fas fa-user-tie"></i>
+                    <h2>Je cherche à travailler</h2>
+                    <p>Trouvez des missions agricoles et développez vos compétences</p>
+                    <ul>
+                        <li>Accédez à des missions variées</li>
+                        <li>Gérez votre emploi du temps</li>
+                        <li>Bénéficiez d'un suivi personnalisé</li>
+                    </ul>
+                    <span class="choice-button">S'inscrire en tant qu'actif</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Inclusion du footer -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Charger le header et le footer
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+    </script>
+</body>
+</html> 

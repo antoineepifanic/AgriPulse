@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriPulse - Guide de gestion des missions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Inclusion du header -->
+    <div id="header-container"></div>
+
+    <main class="help-content">
+        <div class="help-container">
+            <h1>Guide de gestion des missions</h1>
+            <p class="help-description">Apprenez à gérer efficacement vos missions sur AgriPulse</p>
+
+            <div class="help-sections">
+                <section class="help-section">
+                    <h2><i class="fas fa-tasks"></i> Pour les agriculteurs</h2>
+                    <div class="help-content">
+                        <h3>Publier une mission</h3>
+                        <div class="help-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <h4>Définir les détails</h4>
+                                <p>Précisez le type de travail, la durée, le lieu et la rémunération</p>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <h4>Ajouter les exigences</h4>
+                                <p>Indiquez les compétences requises et le niveau d'expérience nécessaire</p>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <h4>Publier et gérer</h4>
+                                <p>Validez la publication et gérez les candidatures reçues</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="help-section">
+                    <h2><i class="fas fa-search"></i> Pour les actifs</h2>
+                    <div class="help-content">
+                        <h3>Trouver des missions</h3>
+                        <ul>
+                            <li>Utilisez les filtres pour affiner votre recherche</li>
+                            <li>Consultez les détails complets de chaque mission</li>
+                            <li>Vérifiez la compatibilité avec vos disponibilités</li>
+                            <li>Postulez aux missions qui vous intéressent</li>
+                        </ul>
+                        <h3>Gérer vos candidatures</h3>
+                        <ul>
+                            <li>Suivez l'état de vos candidatures</li>
+                            <li>Communiquez avec les agriculteurs</li>
+                            <li>Confirmez votre disponibilité</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="help-section">
+                    <h2><i class="fas fa-calendar-check"></i> Suivi des missions</h2>
+                    <div class="help-content">
+                        <h3>Avant la mission</h3>
+                        <ul>
+                            <li>Confirmez les détails avec l'agriculteur</li>
+                            <li>Préparez les documents nécessaires</li>
+                            <li>Planifiez votre trajet</li>
+                        </ul>
+                        <h3>Pendant la mission</h3>
+                        <ul>
+                            <li>Respectez les horaires convenus</li>
+                            <li>Suivez les consignes de sécurité</li>
+                            <li>Communiquez en cas de problème</li>
+                        </ul>
+                        <h3>Après la mission</h3>
+                        <ul>
+                            <li>Confirmez la fin de la mission</li>
+                            <li>Laissez un avis sur l'expérience</li>
+                            <li>Recevez votre paiement</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="help-navigation">
+                <a href="centre-aide.html" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Retour au centre d'aide
+                </a>
+                <a href="contact.html" class="contact-button">
+                    Besoin d'aide supplémentaire ? <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Inclusion du footer -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Charger le header et le footer
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+    </script>
+</body>
+</html> 

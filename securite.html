@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriPulse - Guide de sécurité</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Inclusion du header -->
+    <div id="header-container"></div>
+
+    <main class="help-content">
+        <div class="help-container">
+            <h1>Guide de sécurité</h1>
+            <p class="help-description">Protégez votre compte et vos données sur AgriPulse</p>
+
+            <div class="help-sections">
+                <section class="help-section">
+                    <h2><i class="fas fa-lock"></i> Protection du compte</h2>
+                    <div class="help-content">
+                        <h3>Mot de passe</h3>
+                        <ul>
+                            <li>Utilisez un mot de passe fort et unique</li>
+                            <li>Changez régulièrement votre mot de passe</li>
+                            <li>N'utilisez pas le même mot de passe sur d'autres sites</li>
+                            <li>Activez l'authentification à deux facteurs</li>
+                        </ul>
+                        <h3>Connexion sécurisée</h3>
+                        <ul>
+                            <li>Vérifiez toujours l'URL du site</li>
+                            <li>Ne partagez jamais vos identifiants</li>
+                            <li>Déconnectez-vous après chaque session</li>
+                            <li>Surveillez les connexions suspectes</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="help-section">
+                    <h2><i class="fas fa-shield-alt"></i> Protection des données</h2>
+                    <div class="help-content">
+                        <h3>Données personnelles</h3>
+                        <ul>
+                            <li>Vérifiez les informations partagées</li>
+                            <li>Mettez à jour régulièrement vos données</li>
+                            <li>Contrôlez vos paramètres de confidentialité</li>
+                            <li>Supprimez les données obsolètes</li>
+                        </ul>
+                        <h3>Communication</h3>
+                        <ul>
+                            <li>Utilisez la messagerie interne</li>
+                            <li>Ne partagez pas d'informations sensibles</li>
+                            <li>Signalez les comportements suspects</li>
+                            <li>Respectez la confidentialité des autres</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="help-section">
+                    <h2><i class="fas fa-exclamation-triangle"></i> Signaler un problème</h2>
+                    <div class="help-content">
+                        <h3>Que signaler ?</h3>
+                        <ul>
+                            <li>Comportements inappropriés</li>
+                            <li>Usurpation d'identité</li>
+                            <li>Fraude ou arnaque</li>
+                            <li>Problèmes de sécurité</li>
+                        </ul>
+                        <h3>Comment signaler ?</h3>
+                        <ul>
+                            <li>Utilisez le bouton "Signaler" sur le profil</li>
+                            <li>Contactez le support sécurité</li>
+                            <li>Fournissez des preuves si possible</li>
+                            <li>Restez disponible pour plus d'informations</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="help-section">
+                    <h2><i class="fas fa-user-shield"></i> Bonnes pratiques</h2>
+                    <div class="help-content">
+                        <h3>Sur le terrain</h3>
+                        <ul>
+                            <li>Rencontrez-vous dans un lieu public</li>
+                            <li>Informez quelqu'un de vos déplacements</li>
+                            <li>Respectez les règles de sécurité</li>
+                            <li>Utilisez les équipements de protection</li>
+                        </ul>
+                        <h3>En ligne</h3>
+                        <ul>
+                            <li>Mettez à jour vos appareils</li>
+                            <li>Utilisez un antivirus</li>
+                            <li>Évitez les réseaux Wi-Fi publics</li>
+                            <li>Sauvegardez vos données</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="help-navigation">
+                <a href="centre-aide.html" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Retour au centre d'aide
+                </a>
+                <a href="contact.html" class="contact-button">
+                    Besoin d'aide supplémentaire ? <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Inclusion du footer -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Charger le header et le footer
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+    </script>
+</body>
+</html> 

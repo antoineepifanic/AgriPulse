@@ -18,68 +18,70 @@
 
             <!-- Barre de recherche -->
             <div class="search-container">
-                <input type="text" id="help-search" placeholder="Rechercher une aide...">
-                <button type="button"><i class="fas fa-search"></i></button>
+                <input type="text" id="searchInput" placeholder="Rechercher une aide...">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
 
             <!-- Catégories principales -->
             <div class="help-categories">
-                <div class="category-card">
-                    <i class="fas fa-user-plus"></i>
-                    <h3>Premiers pas</h3>
-                    <p>Guide d'inscription et prise en main</p>
-                    <a href="#premiers-pas" class="category-link">En savoir plus</a>
-                </div>
+                <a href="premiers-pas.html" class="category-card">
+                    <i class="fas fa-rocket"></i>
+                    <h2>Premiers pas</h2>
+                    <p>Découvrez comment bien démarrer sur AgriPulse</p>
+                    <span class="category-link">En savoir plus <i class="fas fa-arrow-right"></i></span>
+                </a>
 
-                <div class="category-card">
+                <a href="gestion-missions.html" class="category-card">
                     <i class="fas fa-tasks"></i>
-                    <h3>Gestion des missions</h3>
-                    <p>Créer et gérer vos missions</p>
-                    <a href="#missions" class="category-link">En savoir plus</a>
-                </div>
+                    <h2>Gestion des missions</h2>
+                    <p>Apprenez à gérer efficacement vos missions</p>
+                    <span class="category-link">En savoir plus <i class="fas fa-arrow-right"></i></span>
+                </a>
 
-                <div class="category-card">
-                    <i class="fas fa-wallet"></i>
-                    <h3>Paiements</h3>
-                    <p>Informations sur les paiements</p>
-                    <a href="#paiements" class="category-link">En savoir plus</a>
-                </div>
+                <a href="paiements.html" class="category-card">
+                    <i class="fas fa-credit-card"></i>
+                    <h2>Paiements</h2>
+                    <p>Tout sur les paiements et la sécurité financière</p>
+                    <span class="category-link">En savoir plus <i class="fas fa-arrow-right"></i></span>
+                </a>
 
-                <div class="category-card">
+                <a href="securite.html" class="category-card">
                     <i class="fas fa-shield-alt"></i>
-                    <h3>Sécurité</h3>
-                    <p>Protection et confidentialité</p>
-                    <a href="#securite" class="category-link">En savoir plus</a>
-                </div>
+                    <h2>Sécurité</h2>
+                    <p>Protégez votre compte et vos données</p>
+                    <span class="category-link">En savoir plus <i class="fas fa-arrow-right"></i></span>
+                </a>
             </div>
 
             <!-- Guides rapides -->
             <section class="quick-guides">
                 <h2>Guides rapides</h2>
                 <div class="guides-grid">
-                    <div class="guide-item">
-                        <h4>Comment s'inscrire ?</h4>
+                    <a href="premiers-pas.html#inscription" class="guide-card">
+                        <i class="fas fa-user-plus"></i>
+                        <h3>Comment s'inscrire ?</h3>
                         <p>Guide étape par étape pour créer votre compte</p>
-                        <a href="inscription-agriculteur.html" class="guide-link">Voir le guide</a>
-                    </div>
+                    </a>
 
-                    <div class="guide-item">
-                        <h4>Publier une mission</h4>
-                        <p>Apprenez à créer et gérer vos missions</p>
-                        <a href="#publier-mission" class="guide-link">Voir le guide</a>
-                    </div>
+                    <a href="gestion-missions.html#publication" class="guide-card">
+                        <i class="fas fa-plus-circle"></i>
+                        <h3>Publier une mission</h3>
+                        <p>Créez et gérez vos offres de travail</p>
+                    </a>
 
-                    <div class="guide-item">
-                        <h4>Gérer les paiements</h4>
-                        <p>Informations sur le processus de paiement</p>
-                        <a href="#gerer-paiements" class="guide-link">Voir le guide</a>
-                    </div>
+                    <a href="paiements.html#securite" class="guide-card">
+                        <i class="fas fa-lock"></i>
+                        <h3>Sécurité des paiements</h3>
+                        <p>Protection de vos transactions</p>
+                    </a>
 
-                    <div class="guide-item">
-                        <h4>Profil et paramètres</h4>
-                        <p>Personnalisez votre expérience</p>
-                        <a href="#profil" class="guide-link">Voir le guide</a>
-                    </div>
+                    <a href="securite.html#compte" class="guide-card">
+                        <i class="fas fa-user-shield"></i>
+                        <h3>Protection du compte</h3>
+                        <p>Sécurisez votre compte AgriPulse</p>
+                    </a>
                 </div>
             </section>
 
@@ -88,40 +90,43 @@
                 <h2>Questions fréquentes</h2>
                 <div class="faq-grid">
                     <div class="faq-item">
-                        <h4>Comment sont sécurisés les paiements ?</h4>
-                        <p>Nous utilisons un système de paiement sécurisé qui garantit la protection de vos transactions.</p>
+                        <h3>Comment sont sécurisés les paiements ?</h3>
+                        <p>Nous utilisons un système de paiement sécurisé avec cryptage SSL. L'argent est bloqué jusqu'à la fin de la mission.</p>
+                        <a href="paiements.html#securite" class="faq-link">En savoir plus</a>
                     </div>
 
                     <div class="faq-item">
-                        <h4>Comment contacter le support ?</h4>
-                        <p>Notre équipe est disponible par téléphone et email pour vous aider.</p>
+                        <h3>Comment contacter le support ?</h3>
+                        <p>Notre équipe est disponible par email, téléphone ou via le formulaire de contact.</p>
+                        <a href="contact.html" class="faq-link">Nous contacter</a>
                     </div>
 
                     <div class="faq-item">
-                        <h4>Comment modifier mon profil ?</h4>
-                        <p>Accédez à vos paramètres depuis votre tableau de bord.</p>
+                        <h3>Comment modifier mon profil ?</h3>
+                        <p>Accédez à vos paramètres depuis votre tableau de bord pour modifier vos informations.</p>
+                        <a href="premiers-pas.html#profil" class="faq-link">Voir le guide</a>
                     </div>
 
                     <div class="faq-item">
-                        <h4>Comment annuler une mission ?</h4>
-                        <p>Consultez notre politique d'annulation dans les conditions d'utilisation.</p>
+                        <h3>Comment annuler une mission ?</h3>
+                        <p>Vous pouvez annuler une mission depuis votre tableau de bord, sous certaines conditions.</p>
+                        <a href="gestion-missions.html#annulation" class="faq-link">En savoir plus</a>
                     </div>
                 </div>
-                <a href="faq.html" class="view-all-faq">Voir toutes les questions</a>
             </section>
 
             <!-- Contact direct -->
             <section class="direct-contact">
                 <h2>Besoin d'aide supplémentaire ?</h2>
                 <p>Notre équipe est là pour vous aider</p>
-                <div class="contact-options">
+                <div class="contact-buttons">
                     <a href="contact.html" class="contact-button">
                         <i class="fas fa-envelope"></i>
                         Nous contacter
                     </a>
-                    <a href="tel:+33478354243" class="contact-button">
-                        <i class="fas fa-phone"></i>
-                        Appeler le support
+                    <a href="faq.html" class="contact-button">
+                        <i class="fas fa-question-circle"></i>
+                        Voir la FAQ complète
                     </a>
                 </div>
             </section>
@@ -141,10 +146,11 @@
             .then(response => response.text())
             .then(data => document.getElementById('footer-container').innerHTML = data);
 
-        // Fonction de recherche
-        document.getElementById('help-search').addEventListener('input', function(e) {
-            const searchTerm = e.target.value.toLowerCase();
-            // Implémenter la logique de recherche ici
+        // Fonction de recherche (à implémenter)
+        document.querySelector('.search-button').addEventListener('click', function() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            // Logique de recherche à implémenter
+            console.log('Recherche:', searchTerm);
         });
     </script>
 </body>

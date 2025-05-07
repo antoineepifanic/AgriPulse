@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriPulse - Guide des paiements</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Inclusion du header -->
+    <div id="header-container"></div>
+
+    <main class="help-content">
+        <div class="help-container">
+            <h1>Guide des paiements</h1>
+            <p class="help-description">Tout ce que vous devez savoir sur les paiements sur AgriPulse</p>
+
+            <div class="help-sections">
+                <section class="help-section">
+                    <h2><i class="fas fa-shield-alt"></i> Sécurité des paiements</h2>
+                    <div class="help-content">
+                        <h3>Protection des transactions</h3>
+                        <ul>
+                            <li>Paiements sécurisés par cryptage SSL</li>
+                            <li>Protection contre la fraude</li>
+                            <li>Vérification des identités</li>
+                            <li>Suivi des transactions</li>
+                        </ul>
+                        <h3>Garanties</h3>
+                        <ul>
+                            <li>Argent bloqué jusqu'à la fin de la mission</li>
+                            <li>Remboursement en cas de litige</li>
+                            <li>Support dédié pour les problèmes de paiement</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="help-section">
+                    <h2><i class="fas fa-credit-card"></i> Méthodes de paiement</h2>
+                    <div class="help-content">
+                        <h3>Options disponibles</h3>
+                        <ul>
+                            <li>Cartes bancaires (Visa, Mastercard)</li>
+                            <li>Virement bancaire</li>
+                            <li>PayPal</li>
+                        </ul>
+                        <h3>Frais et commissions</h3>
+                        <ul>
+                            <li>Commission de plateforme : 5%</li>
+                            <li>Frais de transaction : variables selon la méthode</li>
+                            <li>Pas de frais cachés</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="help-section">
+                    <h2><i class="fas fa-file-invoice"></i> Facturation</h2>
+                    <div class="help-content">
+                        <h3>Pour les agriculteurs</h3>
+                        <ul>
+                            <li>Factures automatiques générées</li>
+                            <li>Historique des paiements</li>
+                            <li>Export des documents</li>
+                        </ul>
+                        <h3>Pour les actifs</h3>
+                        <ul>
+                            <li>Reçus de paiement</li>
+                            <li>Déclarations fiscales</li>
+                            <li>Suivi des revenus</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="help-section">
+                    <h2><i class="fas fa-question-circle"></i> Questions fréquentes</h2>
+                    <div class="help-content">
+                        <h3>Délais de paiement</h3>
+                        <p>Les paiements sont traités sous 2-3 jours ouvrés après validation de la mission</p>
+                        <h3>Problèmes de paiement</h3>
+                        <p>En cas de problème, contactez notre support dédié aux paiements</p>
+                        <h3>Remboursements</h3>
+                        <p>Les remboursements sont traités sous 5-7 jours ouvrés</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="help-navigation">
+                <a href="centre-aide.html" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Retour au centre d'aide
+                </a>
+                <a href="contact.html" class="contact-button">
+                    Besoin d'aide supplémentaire ? <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Inclusion du footer -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Charger le header et le footer
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+    </script>
+</body>
+</html> 

@@ -493,12 +493,12 @@ main, .container, .hero-section {
 
 /* Styles pour la page de connexion */
 .login-page {
-    min-height: calc(100vh - 300px); /* Espace pour header et footer */
+    min-height: calc(100vh - 300px);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 40px 20px;
-    margin-top: 80px; /* Ajout d'une marge supérieure pour l'espace après le header */
+    margin-top: 80px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -510,14 +510,14 @@ main, .container, .hero-section {
     max-width: 400px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border: 2px solid rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* Ajouté pour inclure padding dans la largeur */
+    box-sizing: border-box;
 }
 
 .login-form {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centre tous les éléments du formulaire */
+    align-items: center;
 }
 
 .form-group {
@@ -527,7 +527,7 @@ main, .container, .hero-section {
 
 .login-input {
     width: 100%;
-    box-sizing: border-box; /* S'assure que le padding ne dépasse pas */
+    box-sizing: border-box;
     padding: 12px 15px;
     border: 2px solid #5c8374;
     border-radius: 8px;
@@ -539,7 +539,7 @@ main, .container, .hero-section {
 
 .login-button {
     width: 100%;
-    max-width: 200px; /* Ajouté pour un bouton moins large */
+    max-width: 200px;
     padding: 12px;
     background-color: #5c8374;
     color: white;
@@ -576,12 +576,6 @@ main, .container, .hero-section {
     font-weight: bold;
 }
 
-.register-button:hover {
-    background-color: #5c8374;
-    color: white;
-    transform: translateY(-2px);
-}
-
 /* Pour les effets hover et transition */
 .login-button:hover {
     background-color: #496b5e;
@@ -591,6 +585,12 @@ main, .container, .hero-section {
 .login-input:focus {
     border-color: #496b5e;
     outline: none;
+}
+
+.register-button:hover {
+    background-color: #5c8374;
+    color: white;
+    transform: translateY(-2px);
 }
 
 /* Styles pour la description/texte */

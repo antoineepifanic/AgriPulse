@@ -1410,3 +1410,308 @@ main, .container, .hero-section {
         justify-content: center;
     }
 }
+
+/* Ajustements pour les très petits écrans */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .service-header h1 {
+        font-size: 2rem;
+    }
+
+    .service-section {
+        padding: 15px;
+    }
+
+    .highlight-box {
+        padding: 15px;
+    }
+}
+
+/* Ajustements pour les appareils mobiles */
+@media (max-width: 768px) {
+    /* Ajustements généraux */
+    body {
+        font-size: 14px;
+    }
+
+    /* Header */
+    header, .header {
+        height: auto;
+        padding: 10px;
+        position: fixed;
+    }
+
+    .barre {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .droite {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+        height: auto;
+        min-height: 400px;
+        padding: 60px 20px;
+        margin-top: 100px;
+        background-attachment: scroll;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+    }
+
+    /* Navigation */
+    .nav-links {
+        margin-top: 120px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 0;
+    }
+
+    /* Services */
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .custom-button {
+        width: 100%;
+        max-width: 300px;
+        padding: 15px;
+    }
+
+    .button-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Presentation */
+    .presentation-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .presentation-text {
+        padding: 0;
+    }
+
+    .presentation-text h2 {
+        font-size: 1.8rem;
+    }
+
+    /* How it works */
+    .steps-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .step {
+        width: 100%;
+        max-width: 300px;
+        padding: 20px;
+    }
+
+    /* FAQ */
+    .faq-container {
+        padding: 0 20px;
+    }
+
+    .faq-question {
+        padding: 12px 15px;
+    }
+
+    .faq-answer {
+        padding: 12px 15px;
+    }
+
+    /* Stats */
+    .stats-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .stat-item {
+        width: 100%;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer-section h3 {
+        margin-bottom: 20px;
+    }
+
+    .footer-section h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-section ul {
+        margin-bottom: 20px;
+    }
+
+    /* Login page */
+    .login-container {
+        margin: 100px 20px;
+        padding: 20px;
+    }
+
+    .login-form {
+        gap: 15px;
+    }
+
+    /* Service pages */
+    .service-container {
+        margin: 100px 20px;
+        padding: 20px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Help center */
+    .help-categories {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .category-card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Contact page */
+    .contact-form {
+        padding: 20px;
+    }
+
+    .address-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .map-container {
+        width: 100%;
+    }
+
+    .map-container iframe {
+        height: 250px;
+    }
+}
+
+/* Ajustements pour les très petits écrans */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+        padding: 12px 20px;
+    }
+
+    .service-header h1 {
+        font-size: 2rem;
+    }
+
+    .service-section {
+        padding: 15px;
+    }
+
+    .highlight-box {
+        padding: 15px;
+    }
+
+    .login-input,
+    .login-button,
+    .register-button {
+        padding: 10px;
+    }
+
+    .footer-main {
+        padding: 30px 20px 15px 20px;
+    }
+
+    .social-container {
+        margin-top: 20px;
+    }
+
+    .circle {
+        width: 50px;
+        height: 50px;
+    }
+
+    .circle img {
+        width: 30px;
+        height: 30px;
+    }
+}

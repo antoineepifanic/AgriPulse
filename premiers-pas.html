@@ -10,6 +10,76 @@
     <link rel="stylesheet" href="footer.css">
     <script src="dark-mode.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .help-content {
+            padding-top: 80px; /* Espace pour éviter que le header ne chevauche le titre */
+        }
+
+        .help-container {
+            max-width: 1400px; /* Augmenté pour accommoder 3 colonnes */
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .help-sections {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Trois colonnes égales */
+            gap: 1.5rem; /* Réduit pour mieux s'adapter à 3 colonnes */
+            margin-top: 2rem;
+        }
+
+        .help-section {
+            background: white;
+            border-radius: 10px;
+            padding: 1.2rem; /* Légèrement réduit pour s'adapter à 3 colonnes */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            min-width: 0; /* Permet aux sections de rétrécir si nécessaire */
+        }
+
+        .help-section h2 {
+            font-size: 1.2rem; /* Légèrement réduit pour s'adapter à 3 colonnes */
+            margin-bottom: 1rem;
+        }
+
+        .help-section h3 {
+            font-size: 1.1rem;
+            margin: 1rem 0 0.5rem 0;
+        }
+
+        .help-section p {
+            font-size: 0.95rem;
+            margin: 0.5rem 0;
+        }
+
+        /* Styles pour le mode sombre */
+        body.dark-mode .help-section {
+            background: #2d2d2d;
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .help-section h2,
+        body.dark-mode .help-section h3 {
+            color: #4B7F52;
+        }
+
+        body.dark-mode .help-section p,
+        body.dark-mode .help-section li {
+            color: #b0b0b0;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .help-sections {
+                grid-template-columns: repeat(2, 1fr); /* Deux colonnes sur tablette */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .help-sections {
+                grid-template-columns: 1fr; /* Une colonne sur mobile */
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Inclusion du header -->

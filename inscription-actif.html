@@ -37,8 +37,49 @@
             transition: height 0.2s;
         }
 
+        .social-buttons {
+            position: fixed;
+            right: 24px;
+            top: 120px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 999;
+        }
+
+        .social-button {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .social-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .social-button.instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        .social-button.facebook {
+            background: #1877f2;
+        }
+
+        .social-button.twitter {
+            background: #1da1f2;
+        }
+
         @media (max-width: 900px) {
             #progress-bar-container { display: none; }
+            .social-buttons { display: none; }
         }
     </style>
     <!-- Script de live reload -->
@@ -57,6 +98,19 @@
     <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Activer/Désactiver le mode sombre">
         <i class="fas fa-moon"></i>
     </button>
+
+    <!-- Boutons réseaux sociaux -->
+    <div class="social-buttons">
+        <a href="https://instagram.com/agripulse" target="_blank" class="social-button instagram" aria-label="Suivez-nous sur Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://facebook.com/agripulse" target="_blank" class="social-button facebook" aria-label="Suivez-nous sur Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/agripulse" target="_blank" class="social-button twitter" aria-label="Suivez-nous sur Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
 
     <!-- Inclusion du header -->
     <div id="header-container"></div>

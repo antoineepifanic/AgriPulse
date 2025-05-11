@@ -53,6 +53,17 @@ body.dark-mode .stats-section .stat-item {
 @media (max-width: 900px) {
   #progress-bar-container { display: none; }
 }
+
+/* Animations dynamiques au scroll */
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1s cubic-bezier(.4,1.7,.6,1), transform 1s cubic-bezier(.4,1.7,.6,1);
+}
+.slide-in-visible {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
 </style>
 </head>
 <body>
@@ -88,7 +99,7 @@ body.dark-mode .stats-section .stat-item {
 </section>
 
 <!-- Section présentation -->
-<section class="presentation">
+<section class="presentation slide-in-right">
   <div class="presentation-container">
     <div class="presentation-text">
       <h2>AgriPulse : la plateforme qui révolutionne le travail agricole</h2>
@@ -127,7 +138,7 @@ body.dark-mode .stats-section .stat-item {
 </section>
 
 <!-- Services -->
-<section class="services">
+<section class="services slide-in-right">
   <h2 class="section-title">Nos services</h2>
   <div class="button-container">
     <!-- Bouton Agriculture (Blé) -->
@@ -185,7 +196,7 @@ body.dark-mode .stats-section .stat-item {
 </section>
 
 <!-- FAQ -->
-<section class="faq-section">
+<section class="faq-section slide-in-right">
   <h2 class="section-title">Questions fréquentes</h2>
   <div class="faq-container">
     <div class="faq-item">
@@ -222,7 +233,7 @@ body.dark-mode .stats-section .stat-item {
 </section>
 
 <!-- Statistiques -->
-<section class="stats-section">
+<section class="stats-section slide-in-right">
   <div class="stats-container">
     <div class="stat-item">
       <div class="stat-number">250+</div>
@@ -244,7 +255,7 @@ body.dark-mode .stats-section .stat-item {
 </section>
 
 <!-- Call to action -->
-<section class="cta-section" style="margin-bottom: 4rem;">
+<section class="cta-section slide-in-right" style="margin-bottom: 4rem;">
   <h2>Prêt à rejoindre l'aventure AgriPulse ?</h2>
   <p>Inscrivez-vous gratuitement et commencez à créer des liens entre le monde agricole et urbain</p>
   <a href="choix-inscription.html" class="cta-button">S'inscrire maintenant</a>
@@ -289,6 +300,18 @@ window.addEventListener('scroll', function() {
   const barHeight = Math.round(percent * 120); // 120px = hauteur du conteneur
   document.getElementById('progress-bar').style.height = barHeight + 'px';
 });
+
+// Animation d'apparition au scroll
+function revealOnScroll() {
+  document.querySelectorAll('.slide-in-right').forEach(function(el) {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {  // Déclenche un peu plus tôt
+      el.classList.add('slide-in-visible');
+    }
+  });
+}
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('DOMContentLoaded', revealOnScroll);
 </script>
 </body>
 </html>

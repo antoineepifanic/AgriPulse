@@ -64,6 +64,47 @@ body.dark-mode .stats-section .stat-item {
   opacity: 1 !important;
   transform: translateX(0) !important;
 }
+
+/* Style pour le bouton "Voir toutes les questions" */
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: #4B7F52;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 2px solid #4B7F52;
+}
+
+.link-button:hover {
+  background-color: transparent;
+  color: #4B7F52;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(75, 127, 82, 0.15);
+}
+
+.link-button i {
+  transition: transform 0.3s ease;
+}
+
+.link-button:hover i {
+  transform: translateX(4px);
+}
+
+body.dark-mode .link-button {
+  background-color: #4B7F52;
+  color: white;
+  border-color: #4B7F52;
+}
+
+body.dark-mode .link-button:hover {
+  background-color: transparent;
+  color: #4B7F52;
+}
 </style>
 </head>
 <body>

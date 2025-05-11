@@ -154,6 +154,11 @@ body.dark-mode .link-button:hover {
         margin: 0;
     }
 }
+
+body.dark-mode .presentation div[style*="background: #fff"] {
+    background: #1a1a1a !important;
+    border: 1px solid #333 !important;
+}
 </style>
 </head>
 <body>
@@ -296,7 +301,7 @@ body.dark-mode .link-button:hover {
 <!-- FAQ -->
 <section class="faq-section slide-in-right">
   <h2 class="section-title">Questions fréquentes</h2>
-  <div class="faq-container">
+  <div class="faq-container" style="max-width: 800px; margin: 0 auto;">
     <div class="faq-item">
       <div class="faq-question">
         <h3>Comment les paiements sont-ils gérés ?</h3>
@@ -324,9 +329,9 @@ body.dark-mode .link-button:hover {
         <p>Non, certaines missions sont adaptées aux débutants. Chaque offre précise le niveau d'expérience requis.</p>
       </div>
     </div>
-  </div>
-  <div class="faq-more">
-    <a href="faq.html" class="link-button">Voir toutes les questions <i class="fas fa-arrow-right"></i></a>
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="faq.html" class="link-button">Voir toutes les questions <i class="fas fa-arrow-right"></i></a>
+    </div>
   </div>
 </section>
 

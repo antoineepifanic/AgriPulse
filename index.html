@@ -5,16 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AgriPulse - Connexion Agriculture & Monde Urbain</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="dark-mode.css">
+<link rel="stylesheet" href="nav-links.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<script src="dark-mode.js"></script>
 </head>
 <body>
+<!-- Bouton Dark Mode -->
+<button id="darkModeToggle" class="dark-mode-toggle" aria-label="Activer/Désactiver le mode sombre">
+  <i class="fas fa-moon"></i>
+</button>
+
 <!-- Inclusion du header -->
 <div id="header-container"></div>
 
 <!-- Navigation -->
-<div class="nav-links">
-  <a href="inscription-agriculteur.html" id="agriculteur-link">Je suis agriculteur</a>
-  <a href="inscription-actif.html" id="etudiant-link">Je cherche à travailler</a>
+<div class="nav-links" style="background-color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <a href="inscription-agriculteur.html" id="agriculteur-link" style="color: #4B7F52; font-weight: bold;">Je suis agriculteur</a>
+  <a href="inscription-actif.html" id="etudiant-link" style="color: #4B7F52; font-weight: bold;">Je cherche à travailler</a>
 </div>
 
 <!-- Section hero avec image de fond -->

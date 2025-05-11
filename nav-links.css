@@ -1,0 +1,23 @@
+.nav-links {
+    background-color: white !important;
+    margin-top: 60px !important;
+    padding: 10px 20px !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    gap: 20px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+.nav-links a {
+    color: #4B7F52 !important;
+    text-decoration: none !important;
+    padding: 8px 15px !important;
+    border-radius: 4px !important;
+    transition: all 0.3s ease !important;
+    font-weight: bold !important;
+}
+
+.nav-links a:hover {
+    background-color: #f0f0f0 !important;
+    transform: translateY(-2px) !important;
+} 

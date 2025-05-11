@@ -1,0 +1,106 @@
+/* --- Footer style restauration fidèle à la capture --- */
+footer {
+    background: #4B7F52 !important;
+    color: #fff !important;
+    padding: 48px 0 0 0 !important;
+    margin: 0 !important;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-main {
+    width: 100%;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 48px;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+
+.footer-section {
+    flex: 1 1 180px;
+    min-width: 180px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    font-weight: bold;
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: #fff;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+.footer-section h3::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    margin-top: 6px;
+    margin-bottom: 18px;
+}
+
+.footer-section ul, .footer-section p {
+    color: #fff;
+    font-size: 1.08rem;
+    margin: 0 0 12px 0;
+    padding: 0;
+    list-style: none !important;
+}
+
+.footer-section ul, .footer-section ul li {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+.footer-section ul li:before {
+    content: none !important;
+    display: none !important;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    padding-left: 0 !important;
+}
+
+.footer-section a {
+    color: #fff !important;
+    text-decoration: none;
+    transition: text-decoration 0.2s;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #fff;
+    padding: 28px 0 18px 0;
+    font-size: 1.15rem;
+    margin-top: 32px;
+    border-top: 1px solid rgba(255,255,255,0.18);
+    background: transparent;
+    letter-spacing: 0.2px;
+}
+
+@media (max-width: 900px) {
+    .footer-sections {
+        flex-direction: column;
+        gap: 28px;
+        padding: 0 16px;
+    }
+    .footer-section {
+        min-width: 0;
+    }
+} 

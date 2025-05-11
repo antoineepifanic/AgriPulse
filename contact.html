@@ -10,6 +10,142 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="dark-mode.js"></script>
+    <style>
+        .contact-page {
+            padding-top: 80px;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .contact-info {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .contact-info h3 {
+            color: #4B7F52;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .contact-info p {
+            margin: 0.5rem 0;
+            line-height: 1.6;
+        }
+
+        .contact-number {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        .contact-number a {
+            color: #4B7F52;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-number a:hover {
+            color: #3a6340;
+        }
+
+        .contact-availability {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .address-container {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .address-info {
+            flex: 1;
+        }
+
+        .map-container {
+            flex: 1;
+            min-height: 200px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+
+        /* Styles pour le mode sombre */
+        body.dark-mode .contact-info {
+            background: #2d2d2d;
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .contact-info h3 {
+            color: #4B7F52;
+        }
+
+        body.dark-mode .contact-info p {
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .contact-number a {
+            color: #4B7F52;
+        }
+
+        body.dark-mode .contact-number a:hover {
+            color: #6ba373;
+        }
+
+        body.dark-mode .contact-availability {
+            color: #b0b0b0;
+        }
+
+        body.dark-mode .address-info p {
+            color: #e0e0e0;
+        }
+
+        /* Ajout des styles pour la section adresse en mode sombre */
+        body.dark-mode .contact-address {
+            background: #2d2d2d;
+            color: #e0e0e0;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        body.dark-mode .contact-address h3 {
+            color: #4B7F52;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        body.dark-mode .contact-address p {
+            color: #e0e0e0;
+            margin: 0.5rem 0;
+            line-height: 1.6;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .address-container {
+                flex-direction: column;
+            }
+
+            .map-container {
+                min-height: 300px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Inclusion du header -->

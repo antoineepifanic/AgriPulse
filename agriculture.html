@@ -11,24 +11,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="dark-mode.js"></script>
     <style>
+        body {
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
         .service-container {
             max-width: 1000px;
-            margin: 6rem auto;
-            padding: 2rem;
+            margin: 12rem auto 6rem;
+            padding: 3rem 2rem;
             background: white;
             border-radius: 15px;
             box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            position: relative;
         }
 
         .service-header {
             text-align: center;
-            margin-bottom: 3rem;
+            margin-bottom: 4rem;
+            padding-top: 1rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .service-header h1 {
             color: #4B7F52;
             font-size: 2.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            width: 100%;
+            text-align: center;
         }
 
         .service-header p {
@@ -36,6 +53,7 @@
             font-size: 1.2rem;
             max-width: 800px;
             margin: 0 auto;
+            text-align: center;
         }
 
         .service-section {
@@ -43,6 +61,8 @@
             padding: 2rem;
             background: #f8f9fa;
             border-radius: 10px;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .service-section h2 {
@@ -110,6 +130,159 @@
             padding: 1.5rem;
             margin: 2rem 0;
             border-radius: 0 10px 10px 0;
+        }
+
+        /* Styles pour le mode sombre */
+        body.dark-mode {
+            background-color: #1a1a1a;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body.dark-mode .service-container {
+            background: #2d2d2d;
+            color: #e0e0e0;
+            margin: 12rem auto 6rem !important;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        body.dark-mode .service-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding-top: 1rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body.dark-mode .service-header h1 {
+            color: #4B7F52;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            width: 100%;
+            text-align: center;
+        }
+
+        body.dark-mode .service-header p {
+            color: #b0b0b0;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        body.dark-mode .service-section {
+            background: #333333;
+            border: 1px solid #404040;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        body.dark-mode .service-section h2 {
+            color: #4B7F52;
+        }
+
+        body.dark-mode .service-section p {
+            color: #b0b0b0;
+        }
+
+        body.dark-mode .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+            width: 100%;
+        }
+
+        body.dark-mode .service-card {
+            background: #2a2a2a;
+            border: 1px solid #404040;
+        }
+
+        body.dark-mode .service-card h3 {
+            color: #4B7F52;
+        }
+
+        body.dark-mode .service-card p {
+            color: #b0b0b0;
+        }
+
+        body.dark-mode .crop-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            width: 100%;
+        }
+
+        body.dark-mode .crop-item {
+            background: #2a2a2a;
+            border: 1px solid #404040;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        body.dark-mode .crop-item i {
+            color: #4B7F52;
+            font-size: 1.5rem;
+        }
+
+        body.dark-mode .crop-item span {
+            color: #b0b0b0;
+        }
+
+        body.dark-mode .highlight-box {
+            background: #2a2a2a;
+            border-left: 4px solid #4B7F52;
+        }
+
+        body.dark-mode .highlight-box h3 {
+            color: #4B7F52;
+        }
+
+        body.dark-mode .highlight-box ul li {
+            color: #b0b0b0;
+        }
+
+        body.dark-mode #header-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: #1a1a1a;
+        }
+
+        @media (max-width: 768px) {
+            body.dark-mode .service-container {
+                margin: 10rem 1rem 4rem !important;
+                padding: 2rem 1rem;
+            }
+
+            body.dark-mode .service-section {
+                padding: 1.5rem;
+            }
+
+            body.dark-mode .service-grid,
+            body.dark-mode .crop-list {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
         }
     </style>
 </head>

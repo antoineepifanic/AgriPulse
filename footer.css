@@ -2,10 +2,12 @@
 footer {
     background: #4B7F52 !important;
     color: #fff !important;
-    padding: 48px 0 0 0 !important;
+    padding: 0 !important;
     margin: 0 !important;
     width: 100%;
     font-family: 'Arial', sans-serif;
+    border: none !important;
+    font-size: 15px;
 }
 
 .footer-main {
@@ -14,24 +16,29 @@ footer {
 
 .footer-sections {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 0 48px;
+    padding: 0 8px;
     flex-wrap: wrap;
-    gap: 48px;
+    gap: 40px;
+}
+
+.footer-section:first-child {
+    min-width: 260px;
+    flex: 1.5;
 }
 
 .footer-section {
-    flex: 1 1 180px;
-    min-width: 180px;
+    flex: 1 1 160px;
+    min-width: 160px;
     text-align: left;
 }
 
 .footer-section h3 {
     font-weight: bold;
-    font-size: 1.35rem;
+    font-size: 1.08rem;
     margin-bottom: 10px;
     margin-top: 0;
     color: #fff;
@@ -46,13 +53,14 @@ footer {
     height: 2px;
     background: #fff;
     margin-top: 6px;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
+    transition: width 0.3s cubic-bezier(.4,1.7,.6,1);
 }
 
 .footer-section ul, .footer-section p {
     color: #fff;
-    font-size: 1.08rem;
-    margin: 0 0 12px 0;
+    font-size: 0.98rem;
+    margin: 0 0 10px 0;
     padding: 0;
     list-style: none !important;
 }
@@ -69,36 +77,52 @@ footer {
 }
 
 .footer-section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     padding-left: 0 !important;
 }
 
 .footer-section a {
     color: #fff !important;
     text-decoration: none;
-    transition: text-decoration 0.2s;
+    transition: transform 0.2s cubic-bezier(.4,1.7,.6,1), color 0.2s;
+    display: inline-block;
+    position: relative;
 }
 
 .footer-section a:hover {
-    text-decoration: underline;
+    transform: translateX(8px);
+    color: #e0ffe0;
+}
+
+/* Animation du trait sous le titre au hover d'un lien */
+.footer-section ul li a:hover ~ h3::after,
+.footer-section a:focus ~ h3::after {
+    width: 80px;
+}
+
+/* Version JS-free : on étend le trait quand on hover la colonne */
+.footer-section:hover h3::after {
+    width: 80px;
 }
 
 .footer-bottom {
     text-align: center;
     color: #fff;
-    padding: 28px 0 18px 0;
-    font-size: 1.15rem;
-    margin-top: 32px;
+    padding: 12px 0 8px 0;
+    font-size: 0.95rem;
+    margin: 0 auto;
     border-top: 1px solid rgba(255,255,255,0.18);
     background: transparent;
     letter-spacing: 0.2px;
+    max-width: 400px;
 }
 
 @media (max-width: 900px) {
     .footer-sections {
         flex-direction: column;
-        gap: 28px;
-        padding: 0 16px;
+        gap: 20px;
+        padding: 0 8px;
+        max-width: 100%;
     }
     .footer-section {
         min-width: 0;

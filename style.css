@@ -26468,3 +26468,24 @@ body.dark-mode .stat-number {
 
 body.dark-mode .stat-label {
     color: #e0e
+
+/* Correction alignement stats en mode sombre */
+@media (min-width: 600px) {
+    body.dark-mode .stats-section .stats-container {
+      display: flex !important;
+      flex-wrap: nowrap !important;
+      justify-content: space-around !important;
+      align-items: stretch !important;
+      gap: 40px !important;
+    }
+    body.dark-mode .stats-section .stat-item {
+      min-width: 180px !important;
+      max-width: 220px !important;
+      flex: 1 1 0 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      margin: 10px 0 !important;
+    }
+  }

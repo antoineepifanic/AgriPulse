@@ -155,20 +155,42 @@ body.dark-mode .filtre-groupe select option:first-child {
 
 .profil-image {
     width: 100%;
-    height: 200px;
+    aspect-ratio: 1/1;
     overflow: hidden;
-    background-color: #f5f5f5;
+    background-color: white;
+    position: relative;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* Support du mode sombre pour les marges de l'image */
+body.dark-mode .profil-image {
+    background-color: #2a2a2a; /* Couleur de fond sombre pour les marges */
 }
 
 .profil-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 20%; /* Ajuste le positionnement vertical pour montrer plus du haut du visage */
     transition: transform 0.3s;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Ajustement spécifique pour les images d'agriculteurs */
+.profil-card:nth-child(1) .profil-image img,
+.profil-card:nth-child(3) .profil-image img {
+    object-position: center 30%; /* Positionnement encore plus bas pour les agriculteurs */
+}
+
+body.dark-mode .profil-image img {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Ombre légèrement plus prononcée en mode sombre */
 }
 
 .profil-card:hover .profil-image img {
     transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Ombre plus prononcée au survol */
 }
 
 .profil-info {

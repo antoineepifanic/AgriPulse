@@ -21,4 +21,10 @@
 .nav-links a:hover {
     background-color: #f0f0f0 !important;
     transform: translateY(-2px) !important;
+}
+
+/* Ajout d'un style spécifique pour le mode nuit */
+body.dark-mode .nav-links a:hover {
+    background-color: #3a3a3a !important; /* Couleur sombre pour le hover en mode nuit */
+    color: #ffffff !important; /* Texte blanc pour meilleure lisibilité */
 } 

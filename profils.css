@@ -252,6 +252,81 @@ body.dark-mode .filtre-groupe select option:first-child {
     color: #4B7F52;
 }
 
+.profil-distance {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.profil-distance::before {
+    content: '\f3c5';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #4B7F52;
+}
+
+.competence-tag.premium {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #000;
+    font-weight: 600;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    box-shadow: 0 2px 4px rgba(255, 215, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.competence-tag.premium::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+    20% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.competence-tag.premium:hover {
+    background: linear-gradient(135deg, #FFA500, #FFD700);
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(255, 215, 0, 0.3);
+}
+
+/* Dark mode support pour les nouveaux éléments */
+body.dark-mode .profil-distance {
+    color: #b0b0b0;
+}
+
+body.dark-mode .competence-tag.premium {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #000;
+    box-shadow: 0 2px 4px rgba(255, 215, 0, 0.3);
+}
+
+body.dark-mode .competence-tag.premium:hover {
+    box-shadow: 0 3px 6px rgba(255, 215, 0, 0.4);
+}
+
 .voir-profil-btn {
     display: inline-block;
     background-color: #4B7F52;

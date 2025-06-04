@@ -1,7 +1,7 @@
 .nav-links {
     background-color: white !important;
     margin-top: 60px !important;
-    padding: 10px 20px !important;
+    padding: 6px 20px !important;
     display: flex !important;
     justify-content: flex-start !important;
     gap: 20px !important;
@@ -15,6 +15,7 @@
     border-radius: 4px !important;
     transition: all 0.3s ease !important;
     font-weight: bold !important;
+    margin-top: 5px !important;
 }
 
 .nav-links a:hover {

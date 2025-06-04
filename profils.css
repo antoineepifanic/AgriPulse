@@ -1,0 +1,292 @@
+/* Styles pour la page des profils */
+.profils-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6rem 1rem 2rem 1rem; /* Augmentation du padding-top pour éviter le chevauchement avec le header */
+}
+
+.profils-container h1 {
+    color: #4B7F52;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.profils-description {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filtres-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 3rem;
+}
+
+.filtres-section h2 {
+    color: #4B7F52;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.filtres-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.filtre-groupe {
+    flex: 1;
+    min-width: 200px;
+}
+
+.filtre-groupe label {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.filtre-groupe select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: white;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.filtre-groupe select:focus {
+    border-color: #4B7F52;
+    box-shadow: 0 0 0 2px rgba(75, 127, 82, 0.2);
+    outline: none;
+}
+
+.profils-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+.profil-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profil-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.profil-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.profil-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.profil-card:hover .profil-image img {
+    transform: scale(1.05);
+}
+
+.profil-info {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /* Ajout pour éviter le débordement */
+}
+
+.profil-info h3 {
+    color: #4B7F52;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.profil-type {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.profil-region {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.profil-region::before {
+    content: '\f3c5';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #4B7F52;
+}
+
+.profil-description {
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.profil-competences {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.competence-tag {
+    background: #e8f5e9;
+    color: #4B7F52;
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.competence-tag:hover {
+    background: #c8e6c9;
+}
+
+.profil-departement {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.profil-departement::before {
+    content: '\f3c5';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #4B7F52;
+}
+
+.voir-profil-btn {
+    display: inline-block;
+    background-color: #4B7F52;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s;
+    text-align: center;
+    width: calc(100% - 3rem); /* Ajustement pour tenir compte du padding */
+    font-weight: 500;
+    border: 2px solid #4B7F52;
+    box-sizing: border-box; /* Ajout pour éviter le débordement */
+    margin: 0 auto; /* Centrage du bouton */
+}
+
+.voir-profil-btn:hover {
+    background-color: #3d6640;
+    border-color: #3d6640;
+    transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .profils-container {
+        padding-top: 5rem;
+    }
+
+    .profils-container h1 {
+        font-size: 2rem;
+    }
+
+    .filtres-container {
+        flex-direction: column;
+    }
+
+    .filtre-groupe {
+        width: 100%;
+    }
+
+    .profils-grid {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+}
+
+/* Dark mode support */
+body.dark-mode .profils-container h1,
+body.dark-mode .filtres-section h2,
+body.dark-mode .profil-info h3 {
+    color: #4B7F52;
+}
+
+body.dark-mode .filtres-section,
+body.dark-mode .profil-card {
+    background: #1a1a1a;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+body.dark-mode .filtre-groupe label {
+    color: #e0e0e0;
+}
+
+body.dark-mode .filtre-groupe select {
+    background-color: #2a2a2a;
+    border-color: #333;
+    color: #e0e0e0;
+}
+
+body.dark-mode .profil-description {
+    color: #e0e0e0;
+}
+
+body.dark-mode .profil-type {
+    color: #b0b0b0;
+}
+
+body.dark-mode .profil-region {
+    color: #909090;
+}
+
+body.dark-mode .profil-departement {
+    color: #909090;
+}
+
+body.dark-mode .competence-tag {
+    background: #2a3a2d;
+    color: #4B7F52;
+}
+
+body.dark-mode .competence-tag:hover {
+    background: #3a4a3d;
+} 

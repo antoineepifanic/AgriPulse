@@ -1,0 +1,59 @@
+/* Styles pour les boutons */
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.cta-button.primary {
+    background-color: #4B7F52;
+    color: white;
+}
+
+.cta-button.primary:hover {
+    background-color: #3d6640;
+}
+
+.cta-button.secondary {
+    background-color: #ffffff;
+    color: #4B7F52;
+    border: 2px solid #4B7F52;
+    margin-left: 1rem;
+}
+
+.cta-button.secondary:hover {
+    background-color: #f5f5f5;
+    border-color: #3d6640;
+    color: #3d6640;
+}
+
+.cta-button.tertiary {
+    background-color: #ffffff;
+    color: #4B7F52;
+    border: 2px solid #4B7F52;
+    margin-left: 1rem;
+}
+
+.cta-button.tertiary:hover {
+    background-color: #f5f5f5;
+    border-color: #3d6640;
+    color: #3d6640;
+}
+
+/* Responsive design pour les boutons */
+@media (max-width: 768px) {
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cta-button {
+        margin-left: 0 !important;
+        width: 100%;
+    }
+} 

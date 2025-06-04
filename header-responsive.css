@@ -1,0 +1,78 @@
+/* Responsive design pour le header */
+@media (max-width: 768px) {
+    .barre {
+        padding: 0.5rem 1rem;
+        flex-wrap: wrap;
+    }
+
+    .gauche {
+        flex: 1;
+        min-width: 120px;
+    }
+
+    .logo-principal {
+        height: 35px;
+    }
+
+    .centre {
+        display: none; /* Cache le slogan sur mobile */
+    }
+
+    .droite {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .connexion-lien {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .inscription-btn {
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* Ajustement de la navigation */
+    .nav-links {
+        padding: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+        white-space: nowrap;
+    }
+}
+
+/* Ajustements pour très petits écrans */
+@media (max-width: 480px) {
+    .barre {
+        padding: 0.5rem;
+    }
+
+    .logo-principal {
+        height: 30px;
+    }
+
+    .connexion-lien {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .inscription-btn {
+        padding: 0.3rem 0.6rem;
+    }
+
+    .nav-links {
+        padding: 0.4rem;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.6rem;
+    }
+} 

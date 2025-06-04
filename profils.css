@@ -60,18 +60,73 @@
 
 .filtre-groupe select {
     width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 0.8rem 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
     font-size: 1rem;
     background-color: white;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    transition: all 0.3s ease;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234B7F52' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.2em;
+    cursor: pointer;
+    color: #333;
+    font-weight: 500;
+}
+
+.filtre-groupe select:hover {
+    border-color: #4B7F52;
+    box-shadow: 0 2px 4px rgba(75, 127, 82, 0.1);
 }
 
 .filtre-groupe select:focus {
     border-color: #4B7F52;
-    box-shadow: 0 0 0 2px rgba(75, 127, 82, 0.2);
+    box-shadow: 0 0 0 3px rgba(75, 127, 82, 0.2);
     outline: none;
+}
+
+.filtre-groupe select option {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: white;
+    color: #333;
+}
+
+.filtre-groupe select option:first-child {
+    color: #4B7F52;
+    font-weight: 600;
+}
+
+/* Dark mode support pour les selects */
+body.dark-mode .filtre-groupe select {
+    background-color: #2a2a2a;
+    border-color: #404040;
+    color: #e0e0e0;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234B7F52' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+}
+
+body.dark-mode .filtre-groupe select:hover {
+    border-color: #4B7F52;
+    box-shadow: 0 2px 4px rgba(75, 127, 82, 0.2);
+}
+
+body.dark-mode .filtre-groupe select:focus {
+    border-color: #4B7F52;
+    box-shadow: 0 0 0 3px rgba(75, 127, 82, 0.3);
+}
+
+body.dark-mode .filtre-groupe select option {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+body.dark-mode .filtre-groupe select option:first-child {
+    color: #4B7F52;
+    font-weight: 600;
 }
 
 .profils-grid {
@@ -257,12 +312,6 @@ body.dark-mode .profil-card {
 }
 
 body.dark-mode .filtre-groupe label {
-    color: #e0e0e0;
-}
-
-body.dark-mode .filtre-groupe select {
-    background-color: #2a2a2a;
-    border-color: #333;
     color: #e0e0e0;
 }
 
